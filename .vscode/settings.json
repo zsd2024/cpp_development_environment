@@ -92,5 +92,9 @@
     },
     "remote.autoForwardPortsFallback": 0,
     "clock.timezone": "Asia/Shanghai",
-    "clock.datetimeFormat": "HH:mm:ss"
+    "clock.datetimeFormat": "HH:mm:ss",
+    "powermode.enabled": true,
+    "powermode.presets": "particles",
+    "powermode.combo.location": "statusbar",
+    "powermode.combo.timeout": 0
 }

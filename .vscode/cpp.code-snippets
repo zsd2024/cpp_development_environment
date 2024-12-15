@@ -24,7 +24,7 @@
 			"$1",
 			"int main()",
 			"{",
-			"\tios::sync_with_stdio(false);cin.tie(nullptr);",
+			"\tios::sync_with_stdio(false);cin.tie(0);",
 			"\t$0",
 			"}"
 		]
