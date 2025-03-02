@@ -27,8 +27,8 @@ int main()
     fin.sync_with_stdio(false);
     fout.sync_with_stdio(false);
     fin.tie(0);
-    cin >> m >> n;
+    fin >> m >> n;
     for (int i = m; i <= n; ++i)
         if (is_lucky(i))
-            cout << i << '\n';
+            fout << i << '\n';
 }
