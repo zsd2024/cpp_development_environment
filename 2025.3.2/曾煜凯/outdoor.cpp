@@ -18,7 +18,7 @@ bool can_go(int from, int to)
     for (size_t i = 0; i < e[from].size(); ++i)
         if (!vis[e[from][i]] && (can_go(e[from][i], to) || e[from][i] == to))
             return vis[from] = false, can_go_[from][to] = true, true;
-    return vis[from] = false, can_not_go_[from][to] = true, false;
+    return vis[from] = false, can_not_go_[from][to] = true , false;
 }
 int main()
 {
