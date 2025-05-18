@@ -99,4 +99,8 @@
     "powermode.combo.timeout": 0,
     "github.copilot.nextEditSuggestions.enabled": true,
     "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+    "editor.insertSpaces": false,
+    "powermode.shake.enabled": false,
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
 }
