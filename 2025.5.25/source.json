@@ -1,0 +1,738 @@
+{
+	"code": 200,
+	"currentTemplate": "problemset.show",
+	"currentData": {
+		"problemset": {
+			"id": 1001,
+			"name": "NOIP 2007 \u666e\u53ca\u7ec4\u521d\u8d5b\u8bd5\u9898",
+			"provider": {
+				"uid": 256,
+				"name": "lin_toto",
+				"email": "lin_toto",
+				"roles": [
+					"ROLE_ADMIN"
+				],
+				"backgroundUrl": "https:\/\/cdn.luogu.org\/user_bg.png"
+			},
+			"duration": 7200,
+			"description": "NOIP2007 \u521d\u8d5b\u8bd5\u9898\uff08\u666e\u53ca\u7ec4 C++\uff09",
+			"createTime": {
+				"date": "2018-09-27 23:59:32.000000",
+				"timezone_type": 3,
+				"timezone": "Asia\/Shanghai"
+			},
+			"problems": [
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 1,
+					"type": "MultipleSelection",
+					"description": "\u5728\u4ee5\u4e0b\u5404\u9879\u4e2d\uff0c\uff08\u00a0\u00a0\uff09\u4e0d\u662f CPU \u7684\u7ec4\u6210\u90e8\u5206",
+					"createTime": 1657972015,
+					"questions": [
+						{
+							"choices": [
+								"\u63a7\u5236\u5668",
+								"\u8fd0\u7b97\u5668",
+								"\u5bc4\u5b58\u5668\u00a0",
+								"\u4e3b\u677f"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"D"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 2,
+					"type": "MultipleSelection",
+					"description": "\u5728\u5173\u7cfb\u6570\u636e\u5e93\u4e2d\uff0c\u5b58\u653e\u5728\u6570\u636e\u5e93\u4e2d\u7684\u6570\u636e\u7684\u903b\u8f91\u7ed3\u6784\u4ee5\uff08\u00a0\u00a0\uff09\u4e3a\u4e3b\u3002",
+					"createTime": 1538063954,
+					"questions": [
+						{
+							"choices": [
+								"\u4e8c\u53c9\u6811",
+								"\u591a\u53c9\u6811",
+								"\u54c8\u5e0c\u8868",
+								"\u4e8c\u7ef4\u8868"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"D"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 3,
+					"type": "MultipleSelection",
+					"description": "\u5728\u4e0b\u5217\u5404\u9879\u4e2d\uff0c\u53ea\u6709\uff08\u00a0\u00a0\uff09\u4e0d\u662f\u8ba1\u7b97\u673a\u5b58\u50a8\u5bb9\u91cf\u7684\u5e38\u7528\u5355\u4f4d\u3002",
+					"createTime": 1538063954,
+					"questions": [
+						{
+							"choices": [
+								"Byte",
+								"KB",
+								"UB",
+								"TB"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"C"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 4,
+					"type": "MultipleSelection",
+					"description": "ASCII \u7801\u7684\u542b\u4e49\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657968644,
+					"questions": [
+						{
+							"choices": [
+								"\u4e8c\u2192\u5341\u8fdb\u5236\u8f6c\u6362\u7801",
+								"\u7f8e\u56fd\u4fe1\u606f\u4ea4\u6362\u6807\u51c6\u4ee3\u7801 ",
+								"\u6570\u5b57\u7684\u4e8c\u8fdb\u5236\u7f16\u7801",
+								"\u8ba1\u7b97\u673a\u53ef\u5904\u7406\u5b57\u7b26\u7684\u552f\u4e00\u7f16\u7801"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 5,
+					"type": "MultipleSelection",
+					"description": "\u4e00\u4e2a\u5b8c\u6574\u7684\u8ba1\u7b97\u673a\u7cfb\u7edf\u5e94\u5305\u62ec\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1538063954,
+					"questions": [
+						{
+							"choices": [
+								"\u7cfb\u7edf\u786c\u4ef6\u548c\u7cfb\u7edf\u8f6f\u4ef6",
+								"\u786c\u4ef6\u7cfb\u7edf\u548c\u8f6f\u4ef6\u7cfb\u7edf ",
+								"\u4e3b\u673a\u548c\u5916\u90e8\u8bbe\u5907",
+								"\u4e3b\u673a\u3001\u952e\u76d8\u3001\u663e\u793a\u5668\u548c\u8f85\u52a9\u5b58\u50a8\u5668"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 6,
+					"type": "MultipleSelection",
+					"description": "IT \u7684\u542b\u4e49\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657968676,
+					"questions": [
+						{
+							"choices": [
+								"\u901a\u4fe1\u6280\u672f",
+								"\u4fe1\u606f\u6280\u672f",
+								"\u7f51\u7edc\u6280\u672f",
+								"\u4fe1\u606f\u5b66"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 7,
+					"type": "MultipleSelection",
+					"description": "LAN \u7684\u542b\u4e49\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657968684,
+					"questions": [
+						{
+							"choices": [
+								"\u56e0\u7279\u7f51",
+								"\u5c40\u57df\u7f51",
+								"\u5e7f\u57df\u7f51",
+								"\u57ce\u57df\u7f51"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 8,
+					"type": "MultipleSelection",
+					"description": "\u5197\u4f59\u6570\u636e\u662f\u6307\u53ef\u4ee5\u7531\u5176\u5b83\u6570\u636e\u5bfc\u51fa\u7684\u6570\u636e\u3002\u4f8b\u5982\uff0c\u6570\u636e\u5e93\u4e2d\u5df2\u5b58\u653e\u4e86\u5b66\u751f\u7684\u6570\u5b66\u3001\u8bed\u6587\u548c\u82f1\u8bed\u7684\u4e09\u79d1\u6210\u7ee9\uff0c\u5982\u679c\u8fd8\u5b58\u653e\u4e09\u79d1\u6210\u7ee9\u7684\u603b\u5206\uff0c\u5219\u603b\u5206\u5c31\u53ef\u4ee5\u770b\u4f5c\u5197\u4f59\u6570\u636e\u3002\u5197\u4f59\u6570\u636e\u5f80\u5f80\u4f1a\u9020\u6210\u6570\u636e\u7684\u4e0d\u4e00\u81f4\u3002\u4f8b\u5982\uff0c\u4e0a\u9762 $4$ \u4e2a\u6570\u636e\u5982\u679c\u90fd\u662f\u8f93\u5165\u7684\uff0c\u7531\u4e8e\u64cd\u4f5c\u9519\u8bef\u4f7f\u603b\u5206\u4e0d\u7b49\u4e8e\u4e09\u79d1\u6210\u7ee9\u4e4b\u548c\uff0c\u5c31\u4f1a\u4ea7\u751f\u77db\u76fe\u3002\u4e0b\u9762\u5173\u4e8e\u5197\u4f59\u6570\u636e\u7684\u8bf4\u6cd5\u4e2d\uff0c\u6b63\u786e\u7684\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657968759,
+					"questions": [
+						{
+							"choices": [
+								"\u5e94\u8be5\u5728\u6570\u636e\u5e93\u4e2d\u6d88\u9664\u4e00\u5207\u5197\u4f59\u6570\u636e",
+								"\u7528\u9ad8\u7ea7\u8bed\u8a00\u7f16\u5199\u7684\u6570\u636e\u5904\u7406\u7cfb\u7edf\uff0c\u901a\u5e38\u6bd4\u7528\u5173\u7cfb\u6570\u636e\u5e93\u7f16\u5199\u7684\u7cfb\u7edf\u66f4\u5bb9\u6613\u6d88\u9664\u5197\u4f59\u6570\u636e",
+								"\u4e3a\u4e86\u63d0\u9ad8\u67e5\u8be2\u6548\u7387\uff0c\u5728\u6570\u636e\u5e93\u4e2d\u53ef\u4ee5\u4fdd\u7559\u4e00\u4e9b\u5197\u4f59\u6570\u636e\uff0c\u4f46\u66f4\u65b0\u65f6\u8981\u505a\u76f8\u5bb9\u6027\u68c0\u9a8c",
+								"\u505a\u76f8\u5bb9\u6027\u68c0\u9a8c\u4f1a\u964d\u4f4e\u6548\u7387\uff0c\u53ef\u4ee5\u4e0d\u7406\u776c\u6570\u636e\u5e93\u4e2d\u7684\u5197\u4f59\u6570\u636e"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"C"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 9,
+					"type": "MultipleSelection",
+					"description": "\u5728\u4e0b\u5217\u5404\u8f6f\u4ef6\uff0c\u4e0d\u5c5e\u4e8e NOIP \u7ade\u8d5b\uff08\u590d\u8d5b\uff09\u63a8\u8350\u4f7f\u7528\u7684\u8bed\u8a00\u73af\u5883\u6709\uff08\u00a0\u00a0\uff09\u3002\n\n\u003E \u7f16\u8005\u6ce8\uff1a\u7531\u4e8e\u8bd5\u9898\u4e3a $2007$ \u5e74\u7684\u8bd5\u9898\uff0c\u8bf7\u6839\u636e $2007$ \u5e74\u7684\u5b9e\u9645\u60c5\u51b5\u4f5c\u7b54\u3002",
+					"createTime": 1657968810,
+					"questions": [
+						{
+							"choices": [
+								"gcc",
+								"g++",
+								"Turbo C",
+								"Free Pascal"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"C"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 10,
+					"type": "MultipleSelection",
+					"description": "\u4ee5\u4e0b\u65ad\u7535\u540e\u4ecd\u80fd\u4fdd\u5b58\u6570\u636e\u7684\u6709\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1538063954,
+					"questions": [
+						{
+							"choices": [
+								"\u786c\u76d8",
+								"\u9ad8\u901f\u7f13\u5b58",
+								"\u663e\u5b58",
+								"RAM"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 11,
+					"type": "MultipleSelection",
+					"description": "\u5728\u4e0b\u5217\u5173\u4e8e\u8ba1\u7b97\u673a\u8bed\u8a00\u7684\u8bf4\u6cd5\u4e2d\uff0c\u6b63\u786e\u7684\u6709\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657970045,
+					"questions": [
+						{
+							"choices": [
+								"\u9ad8\u7ea7\u8bed\u8a00\u6bd4\u6c47\u7f16\u8bed\u8a00\u66f4\u9ad8\u7ea7\uff0c\u662f\u56e0\u4e3a\u5b83\u7684\u7a0b\u5e8f\u7684\u8fd0\u884c\u6548\u7387\u66f4\u9ad8",
+								"\u968f\u7740 Pascal\u3001C \u7b49\u9ad8\u7ea7\u8bed\u8a00\u7684\u51fa\u73b0\uff0c\u673a\u5668\u8bed\u8a00\u548c\u6c47\u7f16\u8bed\u8a00\u5df2\u7ecf\u9000\u51fa\u4e86\u5386\u53f2\u821e\u53f0",
+								"\u9ad8\u7ea7\u8bed\u8a00\u6bd4\u6c47\u7f16\u8bed\u8a00\u7a0b\u5e8f\u66f4\u5bb9\u6613\u4ece\u4e00\u79cd\u8ba1\u7b97\u673a\u4e0a\u79fb\u690d\u5230\u53e6\u4e00\u79cd\u8ba1\u7b97\u673a\u4e0a",
+								"C \u662f\u4e00\u79cd\u9762\u5411\u5bf9\u8c61\u7684\u9ad8\u7ea7\u8ba1\u7b97\u673a\u8bed\u8a00"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"C"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 12,
+					"type": "MultipleSelection",
+					"description": "\u8fd1 20 \u5e74\u6765\uff0c\u8bb8\u591a\u8ba1\u7b97\u673a\u4e13\u5bb6\u90fd\u5927\u529b\u63a8\u5d07\u9012\u5f52\u7b97\u6cd5\uff0c\u8ba4\u4e3a\u5b83\u662f\u89e3\u51b3\u8f83\u590d\u6742\u95ee\u9898\u7684\u5f3a\u6709\u529b\u7684\u5de5\u5177\u3002\u5728\u4e0b\u5217\u5173\u4e8e\u9012\u5f52\u7b97\u6cd5\u7684\u8bf4\u6cd5\u4e2d\uff0c\u6b63\u786e\u7684\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657969979,
+					"questions": [
+						{
+							"choices": [
+								"\u5728 1977 \u5e74\u524d\u540e\u5f62\u6210\u6807\u51c6\u7684\u8ba1\u7b97\u673a\u9ad8\u7ea7\u8bed\u8a00 FORTRAN77 \u7981\u6b62\u5728\u7a0b\u5e8f\u4f7f\u7528\u9012\u5f52\uff0c\u539f\u56e0\u4e4b\u4e00\u662f\u8be5\u65b9\u6cd5\u53ef\u80fd\u4f1a\u5360\u7528\u66f4\u591a\u7684\u5185\u5b58\u7a7a\u95f4",
+								"\u548c\u975e\u9012\u5f52\u7b97\u6cd5\u76f8\u6bd4\uff0c\u89e3\u51b3\u540c\u4e00\u4e2a\u95ee\u9898\uff0c\u9012\u5f52\u7b97\u6cd5\u4e00\u822c\u8fd0\u884c\u5f97\u66f4\u5feb\u4e00\u4e9b",
+								"\u5bf9\u4e8e\u8f83\u590d\u6742\u7684\u95ee\u9898\uff0c\u7528\u9012\u5f52\u65b9\u5f0f\u7f16\u7a0b\u4e00\u822c\u6bd4\u975e\u9012\u5f52\u65b9\u5f0f\u66f4\u96be\u4e00\u4e9b",
+								"\u5bf9\u4e8e\u5df2\u7ecf\u5b9a\u4e49\u597d\u7684\u6807\u51c6\u6570\u5b66\u51fd\u6570 sin(x)\uff0c\u5e94\u7528\u7a0b\u5e8f\u4e2d\u7684\u8bed\u53e5\u201cy=sin(sin(x));\u201d\u5c31\u662f\u4e00\u79cd\u9012\u5f52\u8c03\u7528"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 13,
+					"type": "MultipleSelection",
+					"description": "\u4e00\u4e2a\u65e0\u6cd5\u9760\u81ea\u8eab\u7684\u63a7\u5236\u7ec8\u6b62\u7684\u5faa\u73af\u6210\u4e3a\u201c\u6b7b\u5faa\u73af\u201d\uff0c\u4f8b\u5982\uff0c\u5728 C++ \u8bed\u8a00\u7a0b\u5e8f\u4e2d\uff0c\u8bed\u53e5 `while(1) printf(\u0022*\u0022);` \u5c31\u662f\u4e00\u4e2a\u6b7b\u5faa\u73af\uff0c\u8fd0\u884c\u65f6\u5b83\u5c06\u65e0\u4f11\u6b62\u5730\u6253\u5370 `*` \u53f7\u3002\u4e0b\u9762\u5173\u4e8e\u6b7b\u5faa\u73af\u7684\u8bf4\u6cd5\u4e2d\uff0c\u53ea\u6709\uff08\u00a0\u00a0\uff09\u662f\u6b63\u786e\u7684\u3002",
+					"createTime": 1657969058,
+					"questions": [
+						{
+							"choices": [
+								"\u4e0d\u5b58\u5728\u4e00\u79cd\u7b97\u6cd5\uff0c\u5bf9\u4efb\u4f55\u4e00\u4e2a\u7a0b\u5e8f\u53ca\u76f8\u5e94\u7684\u8f93\u5165\u6570\u636e\uff0c\u90fd\u53ef\u4ee5\u5224\u65ad\u662f\u5426\u4f1a\u51fa\u73b0\u6b7b\u5faa\u73af\uff0c\u56e0\u800c\uff0c\u4efb\u4f55\u7f16\u8bd1\u7cfb\u7edf\u90fd\u4e0d\u505a\u6b7b\u5faa\u73af\u68c0\u67e5",
+								"\u6709\u4e9b\u7f16\u8bd1\u7cfb\u7edf\u53ef\u4ee5\u68c0\u6d4b\u51fa\u6b7b\u5faa\u73af",
+								"\u6b7b\u5faa\u73af\u5c5e\u4e8e\u8bed\u6cd5\u9519\u8bef\uff0c\u65e2\u7136\u7f16\u8bd1\u7cfb\u7edf\u80fd\u68c0\u67e5\u5404\u79cd\u8bed\u6cd5\u9519\u8bef\uff0c\u5f53\u7136\u4e5f\u5e94\u8be5\u80fd\u68c0\u67e5\u51fa\u6b7b\u5faa\u73af",
+								"\u6b7b\u5faa\u73af\u4e0e\u591a\u8fdb\u7a0b\u4e2d\u51fa\u73b0\u7684\u201c\u6b7b\u9501\u201d\u5dee\u4e0d\u591a\uff0c\u800c\u6b7b\u9501\u662f\u53ef\u4ee5\u68c0\u6d4b\u7684\uff0c\u56e0\u800c\uff0c\u6b7b\u5faa\u73af\u4e5f\u53ef\u4ee5\u68c0\u6d4b\u7684"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 14,
+					"type": "MultipleSelection",
+					"description": "\u5728 C++ \u8bed\u8a00\u4e2d,\u8868\u8fbe\u5f0f `23|2^5` \u7684\u503c\u662f( )",
+					"createTime": 1657969086,
+					"questions": [
+						{
+							"choices": [
+								"18",
+								"1",
+								"23",
+								"32"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"C"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 15,
+					"type": "MultipleSelection",
+					"description": "\u5728 C++ \u8bed\u8a00\u4e2d,\u5224\u65ad $a$ \u7b49\u4e8e $0$ \u6216 $b$ \u7b49\u4e8e $0$ \u6216 $c$ \u7b49\u4e8e $0$ \u7684\u6b63\u786e\u7684\u6761\u4ef6\u8868\u8fbe\u5f0f\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657974595,
+					"questions": [
+						{
+							"choices": [
+								"`!((a!=0)||(b!=0)||(c!=0))`",
+								"`!((a!=0)\u0026\u0026(b!=0)\u0026\u0026(c!=0))`",
+								"`!(a==0\u0026\u0026b==0)||(c!=0)`",
+								"`(a=0)\u0026\u0026(b=0)\u0026\u0026(c=0)`"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 16,
+					"type": "MultipleSelection",
+					"description": "\u5730\u9762\u4e0a\u6709\u6807\u53f7\u4e3a A\u3001B\u3001C \u7684\u4e09\u6839\u67f1\uff0c\u5728 A \u67f1\u4e0a\u653e\u6709 $10$ \u4e2a\u76f4\u5f84\u76f8\u540c\u4e2d\u95f4\u6709\u5b54\u7684\u5706\u76d8\uff0c\u4ece\u4e0a\u5230\u4e0b\u4f9d\u6b21\u7f16\u53f7\u4e3a $1,2,3\\dots$\uff0c\u5c06 A \u67f1\u4e0a\u7684\u90e8\u5206\u76d8\u5b50\u7ecf\u8fc7 B \u67f1\u79fb\u5165 C \u67f1\uff0c\u4e5f\u53ef\u4ee5\u5728 B \u67f1\u4e0a\u6682\u5b58\u3002\u5982\u679c B \u67f1\u4e0a\u7684\u64cd\u4f5c\u8bb0\u5f55\u4e3a\u201c\u8fdb\u3001\u8fdb\u3001\u51fa\u3001\u8fdb\u3001\u8fdb\u3001\u51fa\u3001\u51fa\u3001\u8fdb\u3001\u8fdb\u3001\u51fa\u3001\u8fdb\u3001\u51fa\u3001\u51fa\u201d\u3002\u90a3\u4e48\uff0c\u5728 C \u67f1\u4e0a\uff0c\u4ece\u4e0b\u5230\u4e0a\u7684\u7f16\u53f7\u4e3a\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657969209,
+					"questions": [
+						{
+							"choices": [
+								"2 4 3 6 5 7",
+								"2 4 1 2 5 7",
+								"2 4 3 1 7 6",
+								"2 4 3 6 7 5"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"D"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 17,
+					"type": "MultipleSelection",
+					"description": "\u4e0e\u5341\u8fdb\u5236\u6570 $1770$ \u5bf9\u5e94\u7684\u516b\u8fdb\u5236\u6570\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657969454,
+					"questions": [
+						{
+							"choices": [
+								"3350",
+								"3351",
+								"3352",
+								"3540"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"C"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 18,
+					"type": "MultipleSelection",
+					"description": "\u8bbe `A=B=True`\uff0c`C=D=False`\uff0c\u4ee5\u4e0b\u903b\u8f91\u8fd0\u7b97\u8868\u8fbe\u5f0f\u503c\u4e3a\u5047\u7684\u6709\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657969480,
+					"questions": [
+						{
+							"choices": [
+								"(\ufe41A\u2227B)\u2228(C\u2227D\u2228A)",
+								"\ufe41(((A\u2227B)\u2228C)\u2227D)\u00a0\u00a0",
+								"A\u2227(B\u2228C\u2228D)\u2228D",
+								"(A\u2227(D\u2228C))\u2227B"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"D"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 19,
+					"type": "MultipleSelection",
+					"description": "$(2070)_{16} + (34)_8 $ \u7684\u7ed3\u679c\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1538063955,
+					"questions": [
+						{
+							"choices": [
+								"$(8332)_{10}$",
+								"$(208A)_{16}$",
+								"$(100000000110)_2$",
+								"$(20212)_8$"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 20,
+					"type": "MultipleSelection",
+					"description": "\u5df2\u77e5 $7$ \u4e2a\u8282\u70b9\u7684\u4e8c\u53c9\u6811\u7684\u5148\u6839\u904d\u5386\u662f $\\texttt{1 2 4 5 6 3 7}$\uff08\u6570\u5b57\u4e3a\u8282\u70b9\u7684\u7f16\u53f7\uff0c\u4ee5\u4e0b\u540c\uff09\uff0c\u4e2d\u6839\u904d\u5386\u662f $\\texttt{4 2 6 5 1 7 3}$\uff0c\u5219\u8be5\u4e8c\u53c9\u6811\u7684\u540e\u6839\u904d\u5386\u662f\uff08\u00a0\u00a0\uff09\u3002",
+					"createTime": 1657969910,
+					"questions": [
+						{
+							"choices": [
+								"$\\texttt{4 6 5 2 7 3 1}$",
+								"$\\texttt{4 6 5 2 1 3 7}$",
+								"$\\texttt{4 2 3 1 5 4 7}$",
+								"$\\texttt{4 6 5 3 1 7 2}$"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 5,
+					"page": 1,
+					"id": 21,
+					"type": "Blank",
+					"description": "\uff08\u5b50\u96c6\u5212\u5206\uff09\u5c06 $n$ \u4e2a\u6570 $(1,2,\\dots,n)$ \u5212\u5206\u6210 $r$ \u4e2a\u5b50\u96c6\u3002\u6bcf\u4e2a\u6570\u90fd\u6070\u597d\u5c5e\u4e8e\u4e00\u4e2a\u5b50\u96c6\uff0c\u4efb\u4f55\u4e24\u4e2a\u4e0d\u540c\u7684\u5b50\u96c6\u6ca1\u6709\u5171\u540c\u7684\u6570\uff0c\u4e5f\u6ca1\u6709\u7a7a\u96c6\u3002\u5c06\u4e0d\u540c\u5212\u5206\u65b9\u6cd5\u7684\u603b\u6570\u8bb0\u4e3a $S(n,r)$\u3002\u4f8b\u5982\uff0c$S(4,2)=7$\uff0c\u8fd9 $7$ \u79cd\u4e0d\u540c\u7684\u5212\u5206\u65b9\u6cd5\u4f9d\u6b21\u4e3a $\\{(1),(234)\\},\\{(2),(134)\\},\\{(3),(124)\\},\\{(4),(123)\\}$\uff0c$\\{(12),(34)\\},\\{(13),(24)\\},\\{(14),(23)\\}$\u3002\u5f53 $n=6,r=3$ \u65f6\uff0c$S(6,3)=$______________\u3002\n\n\uff08\u63d0\u793a\uff1a\u5148\u56fa\u5b9a\u4e00\u4e2a\u6570\uff0c\u5bf9\u4e8e\u5176\u4f59\u7684 $5$ \u4e2a\u6570\u8003\u8651 $S(5,3)$ \u4e0e $S(5,2)$\uff0c\u518d\u5206\u8fd9\u4e24\u79cd\u60c5\u51b5\u5bf9\u539f\u56fa\u5b9a\u7684\u6570\u8fdb\u884c\u5206\u6790\u3002\uff09",
+					"createTime": 1657970194,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "FullText",
+							"score": 5,
+							"correctAnswers": [
+								"90"
+							]
+						}
+					]
+				},
+				{
+					"score": 5,
+					"page": 1,
+					"id": 22,
+					"type": "Blank",
+					"description": "\uff08\u6700\u77ed\u8def\u7ebf\uff09\u67d0\u57ce\u5e02\u7684\u8857\u9053\u662f\u4e00\u4e2a\u5f88\u89c4\u6574\u7684\u77e9\u5f62\u7f51\u7edc\uff08\u89c1\u4e0b\u56fe\uff09\uff0c\u6709 $7$ \u6761\u5357\u5317\u5411\u7684\u7eb5\u8857\uff0c$5$ \u6761\u4e1c\u897f\u5411\u7684\u6a2a\u8857\u3002\u73b0\u8981\u4ece\u897f\u5357\u89d2\u7684 A \u8d70\u5230\u4e1c\u5317\u89d2\u7684 B \uff0c\u6700\u77ed\u7684\u8d70\u6cd5\u5171\u6709\u591a\u5c11\u79cd\uff1f___________  \n![](http:\/\/luogu-ipic.oss-cn-shanghai.aliyuncs.com\/youti\/93.png)",
+					"createTime": 1657970291,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "FullText",
+							"score": 5,
+							"correctAnswers": [
+								"210"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 23,
+					"type": "Blank",
+					"description": "\u770b\u7a0b\u5e8f\u5199\u7ed3\u679c\uff1a  \n```\n#include\u003Cstdio.h\u003E\nint main()\n{\n\tint i, p[5], a, b, c, x, y = 20;\n\tfor ( i = 0; i \u003C= 4; i++ )\n\t\tscanf( \u0022%d\u0022, \u0026p[i] );\n\ta = (p[0] + p[1]) + (p[2] + p[3] + p[4]) \/ 7;\n\tb = p[0] + p[1] \/ ( (p[2] + p[3]) \/ p[4]);\n\tc = p[0] * p[1] \/ p[2];\n\tx = a + b - p[(p[3] + 3) % 4];\n\tif ( x \u003E 10 )\n\t\ty += (b * 100 - a) \/ (p[p[4] % 3] * 5);\n\telse\n\t\ty += 20 + (b * 100 - c) \/ (p[p[4] % 3] * 5);\n\tprintf( \u0022%d,%d\\n\u0022, x, y );\n\treturn(0);\n}\n\/\/\u6ce8\uff1a\u672c\u4f8b\u4e2d\uff0c\u7ed9\u5b9a\u7684\u8f93\u5165\u6570\u636e\u53ef\u4ee5\u907f\u514d\u5206\u6bcd\u4e3a 0 \u6216\u6570\u7ec4\u5143\u7d20\u4e0b\u6807\u8d8a\u754c\u3002\n```\n\u8f93\u5165\uff1a6 6 5 5 3",
+					"createTime": 1658987753,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": true,
+							"judgeType": "FullText",
+							"score": 8,
+							"correctAnswers": [
+								"15,46"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 24,
+					"type": "Blank",
+					"description": "\u770b\u7a0b\u5e8f\u5199\u7ed3\u679c\uff1a\n```\n#include\u003Cstdio.h\u003E\nvoid fun( int *a, int *b )\n{\n\tint *k;\n\tk = a; a = b; b = k;\n}\n\n\nint main()\n{\n\tint a = 3, b = 6, *x = \u0026a, *y = \u0026b;\n\tfun( x, y );\n\tprintf( \u0022%d,%d \u0022, a, b );\n}\n```\n\u8f93\u51fa\uff1a_______________________________",
+					"createTime": 1657970478,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": true,
+							"judgeType": "FullText",
+							"score": 8,
+							"correctAnswers": [
+								"3,6"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 25,
+					"type": "Blank",
+					"description": "\u770b\u7a0b\u5e8f\u5199\u7ed3\u679c\uff1a\n```\n#include \u0022math.h\u0022\n#include \u0022stdio.h\u0022\nint main()\n{\n\tint a1[51] = { 0 };\n\tint i, j, t, t2, n = 50;\n\tfor ( i = 2; i \u003C= sqrt( n ); i++ )\n\t\tif ( a1[i] == 0 )\n\t\t{\n\t\t\tt2 = n \/ i;\n\t\t\tfor ( j = 2; j \u003C= t2; j++ )\n\t\t\t\ta1[i * j] = 1;\n\t\t}\n\tt = 0;\n\tfor ( i = 2; i \u003C= n; i++ )\n\t\tif ( a1[i] == 0 )\n\t\t{\n\t\t\tprintf( \u0022%4d\u0022, i ); t++;\n\t\t\tif ( t % 10 == 0 )\n\t\t\t\tprintf( \u0022\\n\u0022 );\n\t\t}\n\tprintf( \u0022\\n\u0022 );\n}\n```",
+					"createTime": 1657970489,
+					"questions": [
+						{
+							"info": "\u6bcf\u884c\u56db\u5206",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 4,
+							"correctAnswers": [
+								"  2   3   5   7  11  13  17  19  23  29"
+							]
+						},
+						{
+							"info": "\u6bcf\u884c\u56db\u5206",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 4,
+							"correctAnswers": [
+								" 31  37  41  43  47"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 26,
+					"type": "Blank",
+					"description": "\u770b\u7a0b\u5e8f\u5199\u7ed3\u679c\uff1a\n```\n#include \u0022ctype.h\u0022\n#include \u0022stdio.h\u0022\nvoid expand( char s1[], char s2[] )\n{\n\tint i, j, a, b, c;\n\tj = 0;\n\tfor ( i = 0; (c = s1[i]) != \u0027\\0\u0027; i++ )\n\t\tif ( c == \u0027-\u0027 )\n\t\t{\n\t\t\ta = s1[i - 1]; b = s1[i + 1];\n\t\t\tif ( isalpha( a ) \u0026\u0026 isalpha( b ) || isdigit( a ) \u0026\u0026 isdigit( b ) )\n\/*\u51fd\u6570 isalpha(a) \u7528\u4e8e\u5224\u65ad\u5b57\u7b26 a \u662f\u5426\u4e3a\u5b57\u6bcd\uff0cisdigit(b) \u7528\u4e8e\u5224\u65ad\u5b57\u7b26 b \u662f\u5426\u4e3a\u6570\u5b57,\u5982\u679c\u662f,\u8fd4\u56de 1\uff0c\u5426\u5219\u8fd4\u56de 0 *\/\n\t\t\t{\n\t\t\t\tj--;\n\t\t\t\tdo\n\t\t\t\t\ts2[j++] = a++;\n\t\t\t\twhile ( tolower( a ) \u003C tolower( s1[i + 1] ) );\n\t\t\t}\n\/*\u51fd\u6570 tolower(a) \u7684\u529f\u80fd\u662f\u5f53\u5b57\u7b26 a \u662f\u5927\u5199\u5b57\u6bcd,\u6539\u4e3a\u5c0f\u5199,\u5176\u4f59\u60c5\u51b5\u4e0d\u53d8*\/\n\t\t\telse s2[j++] = c;\n\t\t}else s2[j++] = c;\n\ts2[j] = \u0027\\0\u0027;\n}\n\n\nint main()\n{\n\tchar s1[100], s2[300];\n\tprintf( \u0022input s1:\u0022 );\n\tgets( s1 );\n\texpand( s1, s2 );\n\tprintf( \u0022%s\\n\u0022, s2 );\n}\n```\n\u8f93\u5165\uff1awer2345d-h454-82qqq",
+					"createTime": 1657970547,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": true,
+							"judgeType": "FullText",
+							"score": 8,
+							"correctAnswers": [
+								"input s1:wer2345defgh45456782qqq"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 27,
+					"type": "Blank",
+					"description": "\u5b8c\u5584\u7a0b\u5e8f:  \n\uff08\u6c42\u5b57\u7b26\u7684\u9006\u5e8f\uff09\u4e0b\u9762\u7684\u7a0b\u5e8f\u7684\u529f\u80fd\u662f\u8f93\u5165\u82e5\u5e72\u884c\u5b57\u7b26\u4e32\uff0c\u6bcf\u8f93\u5165\u4e00\u884c\uff0c\u5c31\u6309\u9006\u5e8f\u8f93\u51fa\u8be5\u884c\uff0c\u6700\u540e\u952e\u5165 $-1$ \u7ec8\u6b62\u7a0b\u5e8f\u3002\u8bf7\u5c06\u7a0b\u5e8f\u8865\u5145\u5b8c\u6574\u3002  \n```\n#include \u003Ciostream.h\u003E\n#include \u003Cstring.h\u003E\nint maxline = 200, kz;\nint reverse( char s[] )\n{\n\tint i, j, t;\n\tfor ( i = 0, j = strlen( s ) - 1; i \u003C j; \u3010\u2460\u3011 , \u3010\u2461\u3011 )\n\t{\n\t\tt = s[i]; s[i] = s[j]; s[j] = t;\n\t}\n\treturn(0);\n}\n\n\nint main()\n{\n\tchar line[100];\n\tcout \u003C\u003C \u0022continue? -1 for end.\u0022 \u003C\u003Cendl;\n\tcin\u003E\u003Ekz;\n\twhile(\u3010\u2462\u3011)\n\t{\n\t\tcin  \u003E\u003E  line;\n\t\t\u3010\u2463\u3011;\n\t\tcout \u003C\u003C line  \u003C\u003C  endl;\n\t\tcout \u003C\u003C \u0022continue ? -1 for end.\u0022 \u003C\u003C endl;\n\t\tcin \u003E\u003E kz;\n\t}\n}\n```",
+					"createTime": 1658987589,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"i++",
+								"i=i+1",
+								"i+=1",
+								"++i"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"j--",
+								"j=j-1",
+								"j-=1",
+								"--j"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"kz!=-1"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"reverse(line)"
+							]
+						}
+					]
+				},
+				{
+					"score": 18,
+					"page": 1,
+					"id": 28,
+					"type": "Blank",
+					"description": "\u5b8c\u5584\u7a0b\u5e8f\uff1a  \n\uff08\u68cb\u76d8\u8986\u76d6\u95ee\u9898\uff09\u5728\u4e00\u4e2a $2^k\\times 2^k$ \u4e2a\u65b9\u683c\u7ec4\u6210\u7684\u68cb\u76d8\u4e2d\u6070\u6709\u4e00\u4e2a\u65b9\u683c\u4e0e\u5176\u5b83\u65b9\u683c\u4e0d\u540c\uff08\u56fe\u4e2d\u6807\u8bb0\u4e3a $-1$ \u7684\u65b9\u683c\uff09\uff0c\u79f0\u4e4b\u4e3a\u7279\u6b8a\u65b9\u683c\u3002\u73b0 L \u578b\uff08\u5360 $3$ \u4e2a\u5c0f\u65b9\u683c\uff09\u7eb8\u7247\u8986\u76d6\u68cb\u76d8\u4e0a\u9664\u7279\u6b8a\u65b9\u683c\u7684\u6240\u6709\u90e8\u5206\uff0c\u5404\u7eb8\u7247\u4e0d\u5f97\u91cd\u53e0\uff0c\u4e8e\u662f\uff0c\u7528\u5230\u7684\u7eb8\u7247\u6570\u6070\u597d\u662f $\\dfrac{(4^k-1)}{3}$\u3002\u5728\u4e0b\u8868\u7ed9\u51fa\u7684\u4e00\u4e2a\u8986\u76d6\u65b9\u6848\u4e2d\uff0c$k=2$\uff0c\u76f8\u540c\u7684 $3$ \u5404\u6570\u5b57\u6784\u6210\u4e00\u4e2a\u7eb8\u7247\u3002\u4e0b\u9762\u7ed9\u51fa\u7684\u7a0b\u5e8f\u4f7f\u7528\u5206\u6cbb\u6cd5\u8bbe\u8ba1\u7684\uff0c\u5c06\u68cb\u76d8\u4e00\u5206\u4e3a\u56db\uff0c\u4f9d\u6b21\u5904\u7406\u5de6\u4e0a\u89d2\u3001\u53f3\u4e0a\u89d2\u3001\u5de6\u4e0b\u89d2\u3001\u53f3\u4e0b\u89d2\uff0c\u9012\u5f52\u8fdb\u884c\u3002\u8bf7\u5c06\u7a0b\u5e8f\u8865\u5145\u5b8c\u6574\u3002\n\n```\n2  2  3  3\n2 -1  1  3\n4  1  1  5\n4  4  5  5\n```\n\n```cpp\n#include \u003Ciostream.h\u003E\n#include \u003Ciomanip.h\u003E\nint board[65][65], tile; \/* tile\u4e3a\u7eb8\u7247\u7f16\u53f7 *\/\nvoid chessboard( int tr, int tc, int dr, int dc, int size )\n\/* dr,dc\u4f9d\u6b21\u4e3a\u7279\u6b8a\u65b9\u683c\u7684\u884c\u3001\u5217\u53f7 *\/\n{\n\tint t, s;\n\tif ( size == 1 )\n\t\t\u2460 ;\n\t\tt = tile++;\n\ts = size \/ 2;\n\tif ( \u2461 )\n\t\tchessboard( tr, tc, dr, dc, s );\n\telse{\n\t\tboard[tr + s -1][tc + s -1] = t;\n\t\t[\u2462];\n\t}\n\tif ( dr \u003C tr + s \u0026\u0026 dc \u003E= tc + s )\n\t\tchessboard( tr, tc + s, dr, dc, s );\n\telse{\n\t\tboard[tr + s -1][tc + s] = t;\n\t\t\u2463;\n\t}\n\tif ( dr \u003E= tr + s \u0026\u0026 dc \u003C tc + s )\n\t\tchessboard( tr + s, tc, dr, dc, s );\n\telse{\n\t\tboard[tr + s][tc + s -1] = t;\n\t\t[\u2464];\n\t}\n\tif ( dr \u003E= tr + s \u0026\u0026 dc \u003E= tc + s )\n\t\tchessboard( tr + s, tc + s, dr, dc, s );\n\telse{ board[tr + s][tc + s] = t;\n\t      [\u2465]; }\n}\n\n\nvoid prtl( int b[][65], int n )\n{\n\tint i, j;\n\tfor ( i =1; i \u003C= n; i++ )\n\t{\n\t\tfor ( j =1; j \u003C= n; j++ )\n\t\t\tcout \u003C\u003C setw( 3 ) \u003C\u003C b[i][j];\n\t\tcout \u003C\u003C endl;\n\t}\n}\n\n\nvoid main()\n{\n\tint size, dr, dc;\n\tcout \u003C\u003C \u0022input size(4\/8\/16\/64):\u0022 \u003C\u003C endl;\n\tcin \u003E\u003E size;\n\tcout \u003C\u003C \u0022input the position of special block(x,y):\u0022 \u003C\u003C endl;\n\tcin \u003E\u003E dr \u003E\u003E dc;\n\tboard[dr][dc] = -1;\n\ttile++;\n\tchessboard( 1, 1, dr, dc, size );\n\tprtl( board, size );\n}\n```",
+					"createTime": 1658987731,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"return"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"(dr\u003Ctr+s)\u0026\u0026(dc\u003Ctc+s)",
+								"dr\u003Ctr+s\u0026\u0026dc\u003Ctc+s"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"chessboard(tr,tc,tr+s-1,tc+s-1,s)"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"chessboard(tr,tc+s,tr+s-1,tc+s,s)"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"chessboard(tr+s,tc,tr+s,tc+s-1,s)"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"chessboard(tr+s,tc+s,tr+s,tc+s,s)"
+							]
+						}
+					]
+				}
+			]
+		},
+		"submission": null
+	},
+	"currentUser": {
+		"uid": 1090444,
+		"name": "zengyukai2012",
+		"email": "zengyukai2012",
+		"roles": [
+			"ROLE_USER"
+		],
+		"backgroundUrl": "https:\/\/cdn.luogu.org\/user_bg.png"
+	}
+}
