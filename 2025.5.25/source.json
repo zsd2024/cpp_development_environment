@@ -1,0 +1,744 @@
+{
+	"code": 200,
+	"currentTemplate": "problemset.show",
+	"currentData": {
+		"problemset": {
+			"id": 1010,
+			"name": "NOIP 2011 \u63d0\u9ad8\u7ec4\u521d\u8d5b\u8bd5\u9898",
+			"provider": {
+				"uid": 256,
+				"name": "lin_toto",
+				"email": "lin_toto",
+				"roles": [
+					"ROLE_ADMIN"
+				],
+				"backgroundUrl": "https:\/\/cdn.luogu.org\/user_bg.png"
+			},
+			"duration": 7200,
+			"description": "NOIP2011 \u521d\u8d5b\u8bd5\u9898\uff08\u63d0\u9ad8\u7ec4 C++\uff09",
+			"createTime": {
+				"date": "2018-09-27 23:59:33.000000",
+				"timezone_type": 3,
+				"timezone": "Asia\/Shanghai"
+			},
+			"problems": [
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 367,
+					"type": "MultipleSelection",
+					"description": "\u5728\u4e8c\u8fdb\u5236\u4e0b\uff0c$1011001 +$ \uff08   \uff09= $1100110$\u3002",
+					"createTime": 1658203251,
+					"questions": [
+						{
+							"choices": [
+								"1011            ",
+								"1101        ",
+								"1010          ",
+								"1111"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 368,
+					"type": "MultipleSelection",
+					"description": "\u5b57\u7b26 $\\texttt A$ \u7684 ASCII \u7801\u4e3a\u5341\u516d\u8fdb\u5236 $41$\uff0c\u5219\u5b57\u7b26 $\\texttt Z$ \u7684 ASCII \u7801\u4e3a\u5341\u516d\u8fdb\u5236\u7684\uff08  \uff09\u3002",
+					"createTime": 1658203271,
+					"questions": [
+						{
+							"choices": [
+								"66          ",
+								"5A        ",
+								"50       ",
+								"\u89c6\u5177\u4f53\u7684\u8ba1\u7b97\u673a\u800c\u5b9a"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 369,
+					"type": "MultipleSelection",
+					"description": "\u4e0b\u56fe\u662f\u4e00\u68f5\u4e8c\u53c9\u6811\uff0c\u5b83\u7684\u5148\u5e8f\u904d\u5386\u662f\uff08   \uff09\u3002  \n![](http:\/\/luogu-ipic.oss-cn-shanghai.aliyuncs.com\/youti\/17.png)",
+					"createTime": 1658203303,
+					"questions": [
+						{
+							"choices": [
+								"$\\texttt{ABDEFC}$      ",
+								" $\\texttt{DBEFAC}$     ",
+								" $\\texttt{DFEBCA}$       ",
+								" $\\texttt{ABCDEF}$"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 370,
+					"type": "MultipleSelection",
+					"description": "\u5bc4\u5b58\u5668\u662f\uff08    \uff09\u7684\u91cd\u8981\u7ec4\u6210\u90e8\u5206\u3002",
+					"createTime": 1538063963,
+					"questions": [
+						{
+							"choices": [
+								"\u786c\u76d8           ",
+								"\u9ad8\u901f\u7f13\u5b58          ",
+								"\u5185\u5b58             ",
+								"\u4e2d\u592e\u5904\u7406\u5668\uff08CPU\uff09"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"D"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 371,
+					"type": "MultipleSelection",
+					"description": "\u5e7f\u5ea6\u4f18\u5148\u641c\u7d22\u65f6\uff0c\u9700\u8981\u7528\u5230\u7684\u6570\u636e\u7ed3\u6784\u662f\uff08    \uff09\u3002",
+					"createTime": 1538063963,
+					"questions": [
+						{
+							"choices": [
+								"\u94fe\u8868           ",
+								"\u961f\u5217              ",
+								"\u6808               ",
+								"\u6563\u5217\u8868"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 372,
+					"type": "MultipleSelection",
+					"description": "\u5728\u4f7f\u7528\u9ad8\u7ea7\u8bed\u8a00\u7f16\u5199\u7a0b\u5e8f\u65f6\uff0c\u4e00\u822c\u63d0\u5230\u7684\u201c\u7a7a\u95f4\u590d\u6742\u5ea6\u201d\u4e2d\u7684\u7a7a\u95f4\u662f\u6307\uff08    \uff09\u3002",
+					"createTime": 1538063963,
+					"questions": [
+						{
+							"choices": [
+								"\u7a0b\u5e8f\u8fd0\u884c\u65f6\u7406\u8bba\u4e0a\u6240\u5360\u7684\u5185\u5b58\u7a7a\u95f4",
+								"\u7a0b\u5e8f\u8fd0\u884c\u65f6\u7406\u8bba\u4e0a\u6240\u5360\u7684\u6570\u7ec4\u7a7a\u95f4",
+								"\u7a0b\u5e8f\u8fd0\u884c\u65f6\u7406\u8bba\u4e0a\u6240\u5360\u7684\u786c\u76d8\u7a7a\u95f4",
+								"\u7a0b\u5e8f\u6e90\u6587\u4ef6\u7406\u8bba\u4e0a\u6240\u5360\u7684\u786c\u76d8\u7a7a\u95f4"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 373,
+					"type": "MultipleSelection",
+					"description": "\u5e94\u7528\u5feb\u901f\u6392\u5e8f\u7684\u5206\u6cbb\u601d\u60f3\uff0c\u53ef\u4ee5\u5b9e\u73b0\u4e00\u4e2a\u6c42\u7b2c $K$ \u5927\u6570\u7684\u7a0b\u5e8f\u3002\u5047\u5b9a\u4e0d\u8003\u8651\u6781\u7aef\u7684\u6700\u574f\u60c5\u51b5\uff0c\u7406\u8bba\u4e0a\u53ef\u4ee5\u5b9e\u73b0\u7684\u6700\u4f4e\u7684\u7b97\u6cd5\u65f6\u95f4\u590d\u6742\u5ea6\u4e3a\uff08     \uff09\u3002",
+					"createTime": 1658203352,
+					"questions": [
+						{
+							"choices": [
+								"$O(n^2)$           ",
+								" $O (n \\log n )$          ",
+								" $O (n)$        ",
+								" $O (1)$"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"C"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 375,
+					"type": "MultipleSelection",
+					"description": "\u4e3a\u89e3\u51b3 web \u5e94\u7528\u4e2d\u7684\u4e0d\u517c\u5bb9\u95ee\u9898\uff0c\u4fdd\u969c\u4fe1\u606f\u7684\u987a\u5229\u6d41\u901a\uff0c\uff08     \uff09\u5236\u5b9a\u4e86\u4e00\u7cfb\u5217\u6807\u51c6\uff0c\u6d89\u53ca HTML\u3001XML\u3001CSS \u7b49\uff0c\u5e76\u5efa\u8bae\u5f00\u53d1\u8005\u9075\u5faa\u3002 ",
+					"createTime": 1658203367,
+					"questions": [
+						{
+							"choices": [
+								"\u5fae\u8f6f   ",
+								"\u7f8e\u56fd\u8ba1\u7b97\u673a\u534f\u4f1a\uff08ACM\uff09   ",
+								"\u8054\u5408\u56fd\u6559\u79d1\u6587\u7ec4\u7ec7   ",
+								"\u4e07\u7ef4\u7f51\u8054\u76df\uff08W3C\uff09"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"D"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 376,
+					"type": "MultipleSelection",
+					"description": "\u4f53\u80b2\u8bfe\u7684\u94c3\u58f0\u54cd\u4e86\uff0c\u540c\u5b66\u4eec\u90fd\u9646\u7eed\u7684\u5954\u5411\u64cd\u573a\uff0c\u6309\u8001\u5e08\u7684\u8981\u6c42\u4ece\u9ad8\u5230\u4f4e\u7ad9\u6210\u4e00\u6392\u3002\u6bcf\u4e2a\u540c\u5b66\u6309\u987a\u5e8f\u6765\u5230\u64cd\u573a\u65f6\uff0c\u90fd\u4ece\u6392\u5c3e\u8d70\u5230\u6392\u5934\uff0c\u627e\u5230\u7b2c\u4e00\u4e2a\u6bd4\u81ea\u5df1\u9ad8\u7684\u540c\u5b66\uff0c\u5e76\u7ad9\u5728\u4ed6\u7684\u540e\u9762\u3002\u8fd9\u79cd\u7ad9\u961f\u7684\u65b9\u6cd5\u7c7b\u4f3c\u4e8e\uff08  \uff09\u7b97\u6cd5\u3002",
+					"createTime": 1538063963,
+					"questions": [
+						{
+							"choices": [
+								"\u5feb\u901f\u6392\u5e8f          ",
+								"\u63d2\u5165\u6392\u5e8f          ",
+								"\u5192\u6ce1\u6392\u5e8f          ",
+								"\u5f52\u5e76\u6392\u5e8f"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"B"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 377,
+					"type": "MultipleSelection",
+					"description": "1956\u5e74\uff08  \uff09\u6388\u4e88\u8096\u514b\u5229\uff08William Shockley\uff09\u3001\u5df4\u4e01\uff08John Bardeen\uff09\u548c\u5e03\u62c9\u987f\uff08Walter Brattain\uff09",
+					"createTime": 1538063963,
+					"questions": [
+						{
+							"choices": [
+								"\u8bfa\u8d1d\u5c14\u7269\u7406\u5b66\u5956       ",
+								"\u7ea6\u7ff0\u00b7\u51af\u00b7\u8bfa\u4f9d\u66fc\u5956   ",
+								"\u56fe\u7075\u5956               ",
+								"\u9ad8\u5fb7\u7eb3\u5956 \uff08Donald E. Knuth Prize\uff09"
+							],
+							"allowMultiChoices": false,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 379,
+					"type": "MultipleSelection",
+					"description": "\u5982\u679c\u6839\u7ed3\u70b9\u7684\u6df1\u5ea6\u8bb0\u4e3a $1$\uff0c\u5219\u4e00\u68f5\u6070\u6709 $2011$ \u4e2a\u53f6\u5b50\u7ed3\u70b9\u7684\u4e8c\u53c9\u6811\u7684\u6df1\u5ea6\u53ef\u80fd\u662f\uff08  \uff09\u3002",
+					"createTime": 1658203455,
+					"questions": [
+						{
+							"choices": [
+								"10             ",
+								"11             ",
+								"12              ",
+								"2011"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"CD"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 381,
+					"type": "MultipleSelection",
+					"description": "\u5728\u5e03\u5c14\u903b\u8f91\u4e2d\uff0c\u903b\u8f91\u201c\u6216\u201d\u7684\u6027\u8d28\u6709\uff08   \uff09\u3002",
+					"createTime": 1658205530,
+					"questions": [
+						{
+							"choices": [
+								"\u4ea4\u6362\u5f8b\uff1a$P\\vee Q = Q\\vee P$",
+								"\u7ed3\u5408\u5f8b\uff1a$P\\vee(Q\\vee R)=(P\\vee Q)\\vee R$",
+								"\u5e42\u7b49\u5f8b\uff1a$P\\vee P = P$",
+								"\u6709\u754c\u5f8b\uff1a$P\\vee 1 = 1$\uff08$1$ \u8868\u793a\u903b\u8f91\u771f\uff09"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"ABCD"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 383,
+					"type": "MultipleSelection",
+					"description": "\u4e00\u4e2a\u6b63\u6574\u6570\u5728\u5341\u516d\u8fdb\u5236\u4e0b\u6709 $100$ \u4f4d\uff0c\u5219\u5b83\u5728\u4e8c\u8fdb\u5236\u4e0b\u53ef\u80fd\u6709\uff08  \uff09\u4f4d\u3002",
+					"createTime": 1658203576,
+					"questions": [
+						{
+							"choices": [
+								"399            ",
+								"400            ",
+								"401            ",
+								"404"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"AB"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 384,
+					"type": "MultipleSelection",
+					"description": "\u6c47\u7f16\u8bed\u8a00\uff08    \uff09\u3002",
+					"createTime": 1658203601,
+					"questions": [
+						{
+							"choices": [
+								"\u662f\u4e00\u79cd\u4e0e\u5177\u4f53\u786c\u4ef6\u65e0\u5173\u7684\u7a0b\u5e8f\u8bbe\u8ba1\u8bed\u8a00",
+								"\u5728\u7f16\u5199\u590d\u6742\u7a0b\u5e8f\u65f6\uff0c\u76f8\u5bf9\u4e8e\u9ad8\u7ea7\u8bed\u8a00\u800c\u8a00\u4ee3\u7801\u91cf\u5927\uff0c\u4e14\u4e0d\u6613\u8c03\u8bd5",
+								"\u53ef\u4ee5\u76f4\u63a5\u8bbf\u95ee\u5bc4\u5b58\u5668\u3001\u5185\u5b58\u5355\u5143\u3001I\/O \u7aef\u53e3",
+								"\u968f\u7740\u9ad8\u7ea7\u8bed\u8a00\u7684\u8bde\u751f\uff0c\u5982\u4eca\u5df2\u88ab\u5b8c\u5168\u6dd8\u6c70\uff0c\u4e0d\u518d\u4f7f\u7528"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"BC"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 385,
+					"type": "MultipleSelection",
+					"description": "\u73b0\u6709\u4e00\u6bb5\u6587\u8a00\u6587\uff0c\u8981\u901a\u8fc7\u4e8c\u8fdb\u5236\u54c8\u592b\u66fc\u7f16\u7801\u8fdb\u884c\u538b\u7f29\u3002\u7b80\u5355\u8d77\u89c1\uff0c\u5047\u8bbe\u8fd9\u6bb5\u6587\u8a00\u6587\u53ea\u7531 $4$ \u4e2a\u6c49\u5b57\u201c\u4e4b\u201d\u3001\u201c\u4e4e\u201d\u3001\u201c\u8005\u201d\u3001\u201c\u4e5f\u201d\u7ec4\u6210\uff0c\u5b83\u4eec\u51fa\u73b0\u7684\u6b21\u6570\u5206\u522b\u4e3a $700,600,300,400$\u3002\u90a3\u4e48\uff0c\u201c\u4e5f\u201d\u5b57\u7684\u7f16\u7801\u957f\u5ea6\u53ef\u80fd\u662f\uff08  \uff09\u3002",
+					"createTime": 1658203617,
+					"questions": [
+						{
+							"choices": [
+								"1",
+								"2",
+								"3",
+								"4"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"BC"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 387,
+					"type": "MultipleSelection",
+					"description": "\u751f\u7269\u7279\u5f81\u8bc6\u522b\uff0c\u662f\u5229\u7528\u4eba\u4f53\u672c\u8eab\u7684\u751f\u7269\u7279\u5f81\u8fdb\u884c\u8eab\u4efd\u8ba4\u8bc1\u7684\u4e00\u79cd\u6280\u672f\u3002\u76ee\u524d\uff0c\u6307\u7eb9\u8bc6\u522b\u3001\u8679\u819c\u8bc6\u522b\u3001\u4eba\u8138\u8bc6\u522b\u7b49\u6280\u672f\u5df2\u5e7f\u6cdb\u5e94\u7528\u4e8e\u653f\u5e9c\u3001\u94f6\u884c\u3001\u5b89\u5168\u9632\u536b\u7b49\u9886\u57df\u3002\u4ee5\u4e0b\u5c5e\u4e8e\u751f\u7269\u7279\u5f81\u8bc6\u522b\u6280\u672f\u53ca\u5176\u5e94\u7528\u7684\u662f\uff08  \uff09\u3002",
+					"createTime": 1658203638,
+					"questions": [
+						{
+							"choices": [
+								"\u6307\u9759\u8109\u9a8c\u8bc1       ",
+								"\u6b65\u6001\u9a8c\u8bc1         ",
+								"ATM \u673a\u5bc6\u7801\u9a8c\u8bc1    ",
+								"\u58f0\u97f3\u9a8c\u8bc1"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"ABD"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 388,
+					"type": "MultipleSelection",
+					"description": "\u5bf9\u4e8e\u5e8f\u5217 $7,5,1,9,3,6,8,4$\uff0c\u5728\u4e0d\u6539\u53d8\u987a\u5e8f\u7684\u60c5\u51b5\u4e0b\uff0c\u53bb\u6389\uff08   \uff09\u4f1a\u4f7f\u9006\u5e8f\u5bf9\u7684\u4e2a\u6570\u51cf\u5c11 $3$\u3002",
+					"createTime": 1658203653,
+					"questions": [
+						{
+							"choices": [
+								"7",
+								"5",
+								"3",
+								"6"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"CD"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 389,
+					"type": "MultipleSelection",
+					"description": "\u8ba1\u7b97\u673a\u4e2d\u7684\u6570\u503c\u4fe1\u606f\u5206\u4e3a\u6574\u6570\u548c\u5b9e\u6570\uff08\u6d6e\u70b9\u6570\uff09\u3002\u5b9e\u6570\u4e4b\u6240\u4ee5\u80fd\u591f\u8868\u793a\u5f88\u5927\u6216\u8005\u5f88\u5c0f\u7684\u6570\uff0c\u662f\u7531\u4e8e\u4f7f\u7528\u4e86\uff08    \uff09\u3002",
+					"createTime": 1538063964,
+					"questions": [
+						{
+							"choices": [
+								"\u9636\u7801          ",
+								"\u8865\u7801           ",
+								"\u53cd\u7801         ",
+								"\u8f83\u957f\u7684\u5c3e\u6570"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"A"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 394,
+					"type": "MultipleSelection",
+					"description": "\u5bf9\u4e0b\u56fe\u4f7f\u7528 Dijkstra \u7b97\u6cd5\u8ba1\u7b97 $S$ \u70b9\u5230\u5176\u4f59\u5404\u70b9\u7684\u6700\u77ed\u8def\u5f84\u957f\u5ea6\u65f6\uff0c\u5230 $B$ \u70b9\u7684\u8ddd\u79bb $d[B]$ \u521d\u59cb\u65f6\u8d4b\u4e3a $8$\uff0c\u5728\u7b97\u6cd5\u7684\u6267\u884c\u8fc7\u7a0b\u4e2d\u8fd8\u4f1a\u51fa\u73b0\u7684\u503c\u6709\uff08    \uff09\u3002  \n![](http:\/\/luogu-ipic.oss-cn-shanghai.aliyuncs.com\/youti\/94.png)\n",
+					"createTime": 1658203936,
+					"questions": [
+						{
+							"choices": [
+								"3",
+								"7",
+								"6",
+								"5"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"BCD"
+							]
+						}
+					]
+				},
+				{
+					"score": 1.5,
+					"page": 1,
+					"id": 396,
+					"type": "MultipleSelection",
+					"description": "\u4e3a\u8ba1\u7b97\u673a\u7f51\u7edc\u4e2d\u8fdb\u884c\u6570\u636e\u4ea4\u6362\u800c\u5efa\u7acb\u7684\u89c4\u5219\u3001\u6807\u51c6\u6216\u7ea6\u5b9a\u7684\u96c6\u5408\u79f0\u4e3a\u7f51\u7edc\u534f\u8bae\u3002\u4e0b\u5217\u82f1\u6587\u7f29\u5199\u4e2d\uff0c\uff08   \uff09\u662f\u7f51\u7edc\u534f\u8bae\u3002",
+					"createTime": 1538063964,
+					"questions": [
+						{
+							"choices": [
+								"HTTP               ",
+								"TCP\/IP            ",
+								"FTP             ",
+								"WWW"
+							],
+							"allowMultiChoices": true,
+							"score": 1.5,
+							"correctAnswers": [
+								"ABC"
+							]
+						}
+					]
+				},
+				{
+					"score": 5,
+					"page": 1,
+					"id": 397,
+					"type": "Blank",
+					"description": "\u5e73\u9762\u56fe\u53ef\u4ee5\u5728\u753b\u5728\u5e73\u9762\u4e0a\uff0c\u4e14\u5b83\u7684\u8fb9\u4ec5\u5728\u9876\u70b9\u4e0a\u624d\u80fd\u76f8\u4ea4\u7684\u7b80\u5355\u65e0\u5411\u56fe\u30024\u4e2a\u9876\u70b9\u7684\u5e73\u9762\u56fe\u81f3\u5c11\u67096\u6761\u8fb9\uff0c\u5982\u4e0b\u56fe\u6240\u793a\u3002\u90a3\u4e48\uff0c5\u4e2a\u9876\u70b9\u7684\u5e73\u9762\u56fe\u81f3\u5c11\u6709_____\u6761\u8fb9\u3002  \n![](http:\/\/luogu-ipic.oss-cn-shanghai.aliyuncs.com\/youti\/19.png)",
+					"createTime": 1658204073,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "FullText",
+							"score": 5,
+							"correctAnswers": [
+								"9"
+							]
+						}
+					]
+				},
+				{
+					"score": 5,
+					"page": 1,
+					"id": 399,
+					"type": "Blank",
+					"description": "\u5b9a\u4e49\u4e00\u79cd\u5b57\u7b26\u4e32\u64cd\u4f5c\uff0c\u4e00\u6b21\u53ef\u4ee5\u5c06\u5176\u4e2d\u4e00\u4e2a\u5143\u7d20\u79fb\u5230\u4efb\u610f\u4f4d\u7f6e\u3002\u4e3e\u4f8b\u8bf4\u660e\uff0c\u5bf9\u4e8e\u5b57\u7b26\u4e32 $\\texttt{BCA}$ \u53ef\u4ee5\u5c06 $\\texttt A$ \u79fb\u5230 $\\texttt B$ \u4e4b\u524d\uff0c\u53d8\u5b57\u7b26\u4e32 $\\texttt{ABC}$\u3002\u5982\u679c\u8981\u5c06\u5b57\u7b26\u4e32 $\\texttt{DACHEBGIF}$ \u53d8\u6210 $\\texttt{ABCDEFGHI}$ \u6700\u5c11\u9700\u8981________\u6b21\u64cd\u4f5c\u3002",
+					"createTime": 1658204252,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "FullText",
+							"score": 5,
+							"correctAnswers": [
+								"4"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 400,
+					"type": "Blank",
+					"description": "```\n#include<iostream>\n#include<cstring>\nusing namespace std;\nconst int SIZE = 100;\nint main()\n{\n    int n,i,sum,x,a[SIZE];\n    \n    cin>>n;\n    memset(a,0,sizeof(a));\n    \n    for(i=1;i<=n;i++){\n        cin>>x;\n        a[x]++;\n    }\n    i=0;\n    sum=0;\n    while(sum<(n\/2+1)){\n        i++;\n        sum+=a[i];\n    }\n    cout<<i<<endl;\n    return 0;\n}\n```\n\u8f93\u5165\uff1a  \n11  \n4 5 6 6 4 3 3 2 3 2 1  \n\u8f93\u51fa\uff1a___________   ",
+					"createTime": 1538063964,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": true,
+							"judgeType": "FullText",
+							"score": 8,
+							"correctAnswers": [
+								"3"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 401,
+					"type": "Blank",
+					"description": "```\n#include<iostream>\nusing namespace std;\nint n;\nvoid f2(int x,int y);\nvoid f1(int x,int y)\n{\n    if(x<n)\n        f2(y,x+y);\n}\nvoid f2(int x,int y)\n{\n    cout<<x<<' ';\n    f1(y,x+y);\n}\nint main()\n{\n    cin>>n;\n    f1(0,1);\n    return 0;\n\n    return 0;\n}\n```\n\u8f93\u5165\uff1a30   \n\u8f93\u51fa\uff1a_______________  ",
+					"createTime": 1538063964,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": true,
+							"judgeType": "FullText",
+							"score": 8,
+							"correctAnswers": [
+								"1 2 5 13 34 "
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 402,
+					"type": "Blank",
+					"description": "```\n#include<iostream>\nusing namespace std;\nconst int V=100;\nint n,m,ans,e[V][V];\nbool visited[V];\nvoid dfs(int x,int len)\n{\n    int i;\n    visited[x]= true;\n    if(len>ans)\n       ans=len;\n    for(i=1;i<=n;i++)\n       if( (!visited[i]) && (e[x][i]!=-1) )\n          dfs(i,len+e[x][i]);\n    visited[x]=false;\n}\nint main()\n{\n    int i,j,a,b,c;\n    cin>>n>>m;\n    for(i=1;i<=n;i++)\n       for(j=1;j<=m;j++)\n          e[i][j]=-1;\n    for(i=1;i<=m;i++)\n    {\n        cin>>a>>b>>c;\n        e[a][b]=c;\n        e[b][a]=c;\n    }\n    for(i=1;i<=n;i++)\n       visited[i]=false;\n    ans=0;\n    for(i=1;i<=n;i++)\n       dfs(i,0);\n    cout<<ans<<endl;\n    return 0;\n}\n```\n\u8f93\u5165\uff1a  \n4 6  \n1 2 10  \n2 3 20  \n3 4 30  \n4 1 40  \n1 3 50  \n2 4 60    \n\u8f93\u51fa\uff1a______________",
+					"createTime": 1538063964,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": true,
+							"judgeType": "FullText",
+							"score": 8,
+							"correctAnswers": [
+								"150"
+							]
+						}
+					]
+				},
+				{
+					"score": 8,
+					"page": 1,
+					"id": 403,
+					"type": "Blank",
+					"description": "```\n#include<iostream>\n#include<cstring>\n#include<string>\nusing namespace std;\nconst int SIZE=10000;\nconst int LENGTH=10;\nint n,m,a[SIZE][LENGTH];\nint h(int u,int v)\n{\n    int ans,i;\n    ans=0;\n    for(i=1;i<=n;i++)\n       if( a[u][i]!=a[v][i])\n           ans++;\n    return ans;\n}\nint main()\n{\n    int sum,i,j;\n    cin>>n;\n    memset(a,0,sizeof(a));\n    m=1;\n    while(1)\n    {\n        i=1;\n        while( (i<=n) && (a[m][i]==1) )\n            i++;\n        if(i>n)\n           break;\n        m++;\n        a[m][i]=1;\n        for(j=i+1;j<=n;j++)\n           a[m][j]=a[m-1][j];\n    }\n    sum=0;\n    for(i=1;i<=m;i++)\n       for(j=1;j<=m;j++)\n          sum+=h(i,j);\n    cout<<sum<<endl;\n    return 0;\n}\n```\n\u8f93\u5165\uff1a7  \n\u8f93\u51fa\uff1a_________  ",
+					"createTime": 1538063964,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": true,
+							"judgeType": "FullText",
+							"score": 8,
+							"correctAnswers": [
+								"57344"
+							]
+						}
+					]
+				},
+				{
+					"score": 16,
+					"page": 1,
+					"id": 404,
+					"type": "Blank",
+					"description": "**\u5b8c\u5584\u7a0b\u5e8f**  \n**\uff08\u5927\u6574\u6570\u5f00\u65b9\uff09**  \u8f93\u5165\u4e00\u4e2a\u6b63\u6574\u6570 $n(1\\leq n\\leq 10^{100})$\uff0c\u8bd5\u7528\u4e8c\u5206\u6cd5\u8ba1\u7b97\u5b83\u7684\u5e73\u65b9\u6839\u7684\u6574\u6570\u90e8\u5206\u3002\n```\n#include<iostream>\n#include<string>\nusing namespace std;\nconst int SIZE=200;\nstruct hugeint{\n    int len,num[SIZE];\n};\n\/\/\u5176\u4e2dlen\u8868\u793a\u5927\u6574\u6570\u7684\u4f4d\u6570\uff1bnum[1]\u8868\u793a\u4e2a\u4f4d\uff0cnum[2]\u8868\u793a\u5341\u4f4d\uff0c\u4ee5\u6b64\u7c7b\u63a8\nhugeint times(hugeint a,hugeint b)\n\/\/ \u8ba1\u7b97\u5927\u6574\u6570a\u548cb\u7684\u4e58\u79ef\n{\n    int i,j;\n    hugeint ans;\n    memset(ans.num,0,sizeof(ans.num));\n    for(i=1;i<=a.len;i++)\n       for(j=1;j<=b.len;j++)\n                  \u2460      +=a.num[i]*b.num[j];  \n    for(i=1;i<=a.len+b.len;i++){\n        ans.num[i+1]+=ans.num[i]\/10;\n                 \u2461         ; \n    }\n    if(ans.num[a.len+b.len]>0)\n        ans.len=a.len+b.len;\n    else\n        ans.len=a.len+b.len-1;\n    return ans;\n}\nhugeint add(hugeint a,hugeint b)\n\/\/\u8ba1\u7b97\u5927\u6574\u6570a\u548cb \u7684\u548c\n{\n    int i;\n    hugeint ans;\n    memset(ans.num,0,sizeof(ans.num));\n    if(a.len>b.len)\n        ans.len=a.len;\n    else\n        ans.len=b.len;\n    for(i=1;i<=ans.len;i++){\n        ans.num[i]+=         \u2462       ; \n        ans.num[i+1]+= ans.num[i]\/10;\n        ans.num[i]%=10;\n    }\n    if(ans.num[ans.len+1]>0)\n        ans.len++;\n    return ans;\n}\nhugeint average(hugeint a,hugeint b)\n\/\/\u8ba1\u7b97\u5927\u6574\u6570a\u548cb\u7684\u5e73\u5747\u6570\u7684\u6574\u6570\u90e8\u5206\n{\n    int i;\n    hugeint ans;\n    ans=add(a,b);\n    for(i=ans.len;i>=2;i--){\n        ans.num[i-1]+=(     \u2463      )*10; \n        ans.num[i]\/=2;\n    }\n    ans.num[1]\/=2;\n    if(ans.num[ans.len]==0)\n        ans.len--;\n    return ans;\n}\nhugeint plustwo(hugeint a)\n\/\/ \u8ba1\u7b97\u5927\u6574\u6570a\u52a02\u4e4b\u540e\u7684\u7ed3\u679c\n{\n    int i;\n    hugeint ans;\n    ans=a;\n    ans.num[1]+=2;\n    i=1;\n    while( (i<=ans.len)&&(ans.num[i]>=10) ){\n        ans.num[i+1]+=ans.num[i]\/10;\n        ans.num[i]%=10;\n        i++;\n    }\n    if(ans.num[ans.len+1]>0)\n              \u2464    ; \n    return ans;\n}\nbool over(hugeint a,hugeint b)\n\/\/ \u82e5\u5927\u6574\u6570a>b\u5219\u8fd4\u56detrue\uff0c\u5426\u5219\u8fd4\u56defalse\n{\n    int i;\n    if(      \u2465     )  \n        return false;\n    if( a.len>b.len )\n        return true;\n    for(i=a.len;i>=1;i--){\n        if(a.num[i]<b.num[i])\n           return false;\n        if(a.num[i]>b.num[i])\n           return true;\n    }\n    return false;\n}\nint main()\n{\n    string s;\n    int i;\n    hugeint target,left,middle,right;\n    cin>>s;\n    memset(target.num,0,sizeof(target.num));\n    target.len=s.length();\n    for(i=1;i<=target.len;i++)\n        target.num[i]=s[target.len-i]-      \u2466    ;\n    memset(left.num,0,sizeof(left.num));\n    left.len=1;\n    left.num[1]=1;\n    right=target;\n    do{\n        middle=average(left,right);\n        if(over(       \u2467        ))\n            right=middle;\n        else\n            left=middle;\n    }while(!over(plustwo(left),right) );\n    for(i=left.len;i>=1;i--)\n       cout<<left.num[i];\n    return 0;\n}\n```",
+					"createTime": 1662776137,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"ans.num[i+j-1]"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"ans.num[i]=ans.num[i]%10"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"a.num[i]+b.num[i]"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"ans.num[i]%2",
+								"ans.num[i]&1"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"ans.len++",
+								"ans.len=ans.len+1"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"a.len<b.len"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"'0'",
+								"48"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 2,
+							"correctAnswers": [
+								"times(middle,middle),target"
+							]
+						}
+					]
+				},
+				{
+					"score": 12,
+					"page": 1,
+					"id": 406,
+					"type": "Blank",
+					"description": "2.\uff08\u7b1b\u5361\u5c14\u6811\uff09\u5bf9\u4e8e\u4e00\u4e2a\u7ed9\u5b9a\u7684\u4e24\u4e24\u4e0d\u7b49\u7684\u6b63\u6574\u6570\u5e8f\u5217\uff0c\u7b1b\u5361\u5c14\u6811\u662f\u8fd9\u6837\u7684\u4e00\u68f5\u4e8c\u53c9\u6811\uff1a\u9996\u5148\uff0c\u5b83\u662f\u4e00\u4e2a\u6700\u5c0f\u5806\uff0c\u5373\u9664\u4e86\u6839\u7ed3\u70b9\uff0c\u6bcf\u4e2a\u8282\u70b9\u7684\u6743\u503c\u90fd\u5927\u4e8e\u7236\u8282\u70b9\u7684\u6743\u503c\uff1b\u5176\u6b21\uff0c\u5b83\u7684\u4e2d\u5e8f\u904d\u5386\u6070\u597d\u5c31\u662f\u7ed9\u5b9a\u7684\u5e8f\u5217\u3002\u4f8b\u5982\uff0c\u5bf9\u4e8e\u5e8f\u5217 $7,2,12,1,10,5,15,3$\uff0c\u4e0b\u56fe\u5c31\u662f\u4e00\u68f5\u5bf9\u5e94\u7684\u7b1b\u5361\u5c14\u6811\u3002\u73b0\u8f93\u5165\u5e8f\u5217\u7684\u89c4\u6a21 $n(1\u2264n<100)$ \u548c\u5e8f\u5217\u7684 $n$ \u4e2a\u5143\u7d20\uff0c\u8bd5\u6c42\u5176\u5bf9\u5e94\u7684\u7b1b\u5361\u5c14\u6811\u7684\u6df1\u5ea6 $d$\uff08\u6839\u8282\u70b9\u6df1\u5ea6\u4e3a $1$\uff09\uff0c\u4ee5\u53ca\u6709\u591a\u5c11\u4e2a\u53f6\u5b50\u8282\u70b9\u7684\u6df1\u5ea6\u4e3a $d$\u3002\n\n![](https:\/\/cdn.luogu.com.cn\/upload\/image_hosting\/84hi4zrg.png)\n\n```\n#include<iostream>\nusing namespace std;\nconst int SIZE=100+5;\nconst int INFINITY=1000000;\nint n,a[SIZE],maxDeep,num;\nvoid solve(int left,int right,int deep)\n{\nint i,j,min;\n    if(deep>maxDeep){\n        maxDeep=deep;\n        num=1;\n    }\n    else if(deep==maxDeep)\n              \u2460     ;  \n    min= INFINITY;\n    for(i=left;i<=right;i++)\n        if(min>a[i]){\n            min=a[i];\n                \u2461    ;   \n        }\n    if(left<j)\n            \u2462   ; \n    if(j<right)\n           \u2463     ;     \n}\nint main()\n{\n    int i;\n    cin>>n;\n    for(i=1;i<=n;i++)\n        cin>>a[i];\n    maxDeep=0;\n    solve(1,n,1);\n    cout<<maxDeep<<' '<<num<<endl;\n    return 0;\n}\n```",
+					"createTime": 1658204805,
+					"questions": [
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"num++",
+								"num = num + 1"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"j = i"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"solve(left, j - 1, deep + 1)"
+							]
+						},
+						{
+							"info": "",
+							"allowMultiLines": false,
+							"judgeType": "Relaxed",
+							"score": 3,
+							"correctAnswers": [
+								"solve(j + 1, right, deep + 1)"
+							]
+						}
+					]
+				}
+			]
+		},
+		"submission": null
+	},
+	"currentUser": {
+		"uid": 1090444,
+		"name": "zengyukai2012",
+		"email": "zengyukai2012",
+		"roles": [
+			"ROLE_USER"
+		],
+		"backgroundUrl": "https:\/\/cdn.luogu.org\/user_bg.png"
+	}
+}
