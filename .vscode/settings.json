@@ -108,5 +108,6 @@
     "C_Cpp.autocomplete": "default",
     "C_Cpp.codeFolding": "enabled",
     "C_Cpp.dimInactiveRegions": true,
-    "gitdoc.autoCommitDelay": 0
+    "gitdoc.autoCommitDelay": 0,
+    "gitdoc.autoPullDelay": 0
 }
