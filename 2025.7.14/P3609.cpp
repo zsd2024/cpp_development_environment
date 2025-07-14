@@ -17,6 +17,10 @@ struct SS
 	{
 		return data == other.data;
 	}
+	bool operator!=(const SS &other) const
+	{
+		return data != other.data;
+	}
 } ss[100001];
 const SS h = 'H', s = 'S', p = 'P', u;
 int mx;
@@ -36,33 +40,34 @@ void dfs(int d, int kk, int y, SS nss)
 	else
 	{
 		dfs(d + 1, kk, y + (ss[d] > nss), nss);
-		if (nss == h)
-		{
-			if (ss[d] == h)
-				dfs(d + 1, kk + 1, y + 1, p);
-			else if (ss[d] == p)
-				dfs(d + 1, kk + 1, y + 1, s);
-			else
-				dfs(d + 1, kk, y + 1, h);
-		}
-		else if (nss == s)
-		{
-			if (ss[d] == h)
-				dfs(d + 1, kk + 1, y + 1, p);
-			else if (ss[d] == s)
-				dfs(d + 1, kk + 1, y + 1, h);
-			else
-				dfs(d + 1, kk, y + 1, s);
-		}
-		else if (nss == p)
-		{
-			if (ss[d] == s)
-				dfs(d + 1, kk + 1, y + 1, h);
-			else if (ss[d] == p)
-				dfs(d + 1, kk + 1, y + 1, s);
-			else
-				dfs(d + 1, kk, y + 1, p);
-		}
+		if (kk < k && ss[d] != ss[d - 1])
+			if (nss == h)
+			{
+				if (ss[d] == h)
+					dfs(d + 1, kk + 1, y + 1, p);
+				else if (ss[d] == p)
+					dfs(d + 1, kk + 1, y + 1, s);
+				else
+					dfs(d + 1, kk, y + 1, h);
+			}
+			else if (nss == s)
+			{
+				if (ss[d] == h)
+					dfs(d + 1, kk + 1, y + 1, p);
+				else if (ss[d] == s)
+					dfs(d + 1, kk + 1, y + 1, h);
+				else
+					dfs(d + 1, kk, y + 1, s);
+			}
+			else if (nss == p)
+			{
+				if (ss[d] == s)
+					dfs(d + 1, kk + 1, y + 1, h);
+				else if (ss[d] == p)
+					dfs(d + 1, kk + 1, y + 1, s);
+				else
+					dfs(d + 1, kk, y + 1, p);
+			}
 	}
 }
 int main()
