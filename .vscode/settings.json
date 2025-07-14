@@ -111,5 +111,6 @@
     "gitdoc.autoCommitDelay": 0,
     "gitdoc.autoPullDelay": 0,
     "gitdoc.autoPushDelay": 0,
-    "gitdoc.autoPush": "afterDelay"
+    "gitdoc.autoPush": "afterDelay",
+    "gitdoc.autoPull": "afterDelay"
 }
