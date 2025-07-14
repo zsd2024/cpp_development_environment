@@ -103,4 +103,9 @@
     "powermode.shake.enabled": false,
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "gitdoc.enabled": true,
+    "C_Cpp.autocomplete": "default",
+    "C_Cpp.codeFolding": "enabled",
+    "C_Cpp.dimInactiveRegions": true
 }
