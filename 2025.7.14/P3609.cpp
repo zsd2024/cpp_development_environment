@@ -29,9 +29,9 @@ void dfs(int d, int kk, int y, SS nss)
 	}
 	if (nss == u)
 	{
-		dfs(d + 1, kk, y + (ss[d] > h), h);
-		dfs(d + 1, kk, y + (ss[d] > s), s);
-		dfs(d + 1, kk, y + (ss[d] > p), p);
+		dfs(d + 1, 0, y + (ss[d] > h), h);
+		dfs(d + 1, 0, y + (ss[d] > s), s);
+		dfs(d + 1, 0, y + (ss[d] > p), p);
 	}
 	else
 	{
