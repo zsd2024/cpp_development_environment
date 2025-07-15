@@ -88,7 +88,12 @@
         "variant": "cpp",
         "algorithm": "cpp",
         "iterator": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "expected": "cpp",
+        "format": "cpp",
+        "spanstream": "cpp",
+        "stacktrace": "cpp",
+        "stdfloat": "cpp"
     },
     "remote.autoForwardPortsFallback": 0,
     "clock.timezone": "Asia/Shanghai",
