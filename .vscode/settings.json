@@ -113,5 +113,6 @@
     "gitdoc.autoPushDelay": 0,
     "gitdoc.autoPush": "afterDelay",
     "gitdoc.autoPull": "afterDelay",
-    "gitdoc.pushMode": "push"
+    "gitdoc.pushMode": "push",
+    "files.autoSave": "onFocusChange",
 }
