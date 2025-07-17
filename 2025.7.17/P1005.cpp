@@ -12,20 +12,22 @@ void dfs(int nn, int nm)
 		mx = max(mx, s);
 		return;
 	}
-	if (nn = n + 1)
+	if (nn == n + 1)
 	{
 		dfs(1, nm + 1);
 		return;
 	}
 	{
-		s += a[nn][++mh[nn].first] << nm;
+		s += (a[nn][++mh[nn].first] << nm);
 		dfs(nn + 1, nm);
 		--mh[nn].first;
+		s -= (a[nn][++mh[nn].first] << nm);
 	}
 	{
-		s += a[nn][--mh[nn].second] << nm;
+		s += (a[nn][--mh[nn].second] << nm);
 		dfs(nn + 1, nm);
 		++mh[nn].second;
+		s -= (a[nn][--mh[nn].second] << nm);
 	}
 }
 int main()
