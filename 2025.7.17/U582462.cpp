@@ -484,12 +484,32 @@ struct variable_value
 	variable_value operator=(const variable_value &other)
 	{
 		if (this->type == variable_number)
+		{
 			if (other.type == variable_number)
 				this->number_value = other.number_value;
 			else if (other.type == variable_string)
 				throw runtime_error("Cannot assign string to non-string variable");
 			else if (other.type == variable_boolean)
 				this->number_value = DataTypes::number(other.boolean_value);
+		}
+		else if (this->type == variable_string)
+		{
+			if (other.type == variable_number)
+				throw runtime_error("Cannot assign string to non-string variable");
+			else if (other.type == variable_string)
+				this->string_value = other.string_value;
+			else if (other.type == variable_boolean)
+				throw runtime_error("Cannot assign string to non-string variable");
+		}
+		else if (this->type == variable_boolean)
+		{
+			if (other.type == variable_number)
+				throw runtime_error("Cannot assign string to non-string variable");
+			else if (other.type == variable_string)
+				this->string_value = other.string_value;
+			else if (other.type == variable_boolean)
+				throw runtime_error("Cannot assign string to non-string variable");
+		}
 	}
 };
 map<string, variable_value> variables;
