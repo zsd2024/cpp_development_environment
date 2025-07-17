@@ -1,3 +1,4 @@
+/// @file m
 #include <bits/stdc++.h>
 using namespace std;
 void CompileError(string error_message, int line_number)
@@ -372,6 +373,7 @@ void add_token(string str)
 		}
 	}
 }
+/// @brief 词法分析函数
 void lexer()
 {
 	string t;
@@ -385,6 +387,8 @@ void lexer()
 				add_token(t);
 				t.clear();
 			}
+			if (c == '\n')
+				tokens.push_back(token(token_endline, token_value()));
 		}
 		else
 		{
@@ -398,11 +402,9 @@ void lexer()
 				}
 			}
 			else if (c == '\n')
-				if (in_string)
-					CompileError("Unclosed string", program.size());
-				else
-
-					else t += c;
+				CompileError("Unclosed string", program.size());
+			else
+				t += c;
 			if (t.back() == '(')
 			{
 				string tmp(t.begin(), t.end() - 1);
