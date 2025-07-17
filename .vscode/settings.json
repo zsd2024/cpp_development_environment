@@ -131,4 +131,5 @@
     "gitdoc.pushMode": "push",
     "files.autoSave": "onFocusChange",
     "git.blame.editorDecoration.enabled": true,
+    "outline-map.follow": "viewport",
 }
