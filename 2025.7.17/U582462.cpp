@@ -379,13 +379,13 @@ void lexer()
 	for (const char &c : program)
 	{
 		if (is_blank(c) && !in_string)
+		{
 			if (!t.empty())
 			{
 				add_token(t);
 				t.clear();
 			}
-			else
-				t += c;
+		}
 		else
 		{
 			if (c == '"')
