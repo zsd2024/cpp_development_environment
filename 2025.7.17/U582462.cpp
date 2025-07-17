@@ -43,10 +43,7 @@ namespace DataTypes
 			value = llabs(_value);
 			negative = _value < 0;
 		}
-		number(boolean _value)
-		{
-			value = _value.value ? 1 : 0;
-		}
+		number(boolean _value);
 		number operator+(number other)
 		{
 			if (negative == other.negative)
@@ -145,16 +142,21 @@ namespace DataTypes
 		{
 			value = _value;
 		}
-		boolean(number _value)
-		{
-			value = _value.value != 0;
-		}
+		boolean(number _value);
 		friend ostream &operator<<(ostream &os, const boolean &b)
 		{
 			os << (b.value ? "true" : "false");
 			return os;
 		}
 	};
+	inline number::number(boolean _value)
+	{
+		value = _value.value ? 1 : 0;
+	}
+	boolean::boolean(number _value)
+	{
+		value = _value.value != 0;
+	}
 }
 /// @brief token 类型
 enum token_type
