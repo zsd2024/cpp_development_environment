@@ -200,6 +200,7 @@ enum keyword_type
 };
 enum variable_type
 {
+	varible_numm,	 // 无
 	variable_number, // 整数
 	variable_string, // 字符串
 	variable_boolean // 布尔
@@ -334,7 +335,6 @@ DataTypes::number string_to_number(string s)
 }
 vector<token> tokens;
 string program;
-map<string, token> variables;
 void add_token(string str)
 {
 	map<string, keyword_type>::iterator it_keyword = keywords.find(str);
@@ -377,6 +377,7 @@ void lexer()
 {
 	string t;
 	bool in_string = false;
+	int line_number = 1;
 	for (const char &c : program)
 	{
 		if (is_blank(c) && !in_string)
@@ -387,7 +388,10 @@ void lexer()
 				t.clear();
 			}
 			if (c == '\n')
+			{
 				tokens.push_back(token(token_endline, token_value()));
+				++line_number;
+			}
 		}
 		else
 		{
@@ -401,7 +405,7 @@ void lexer()
 				}
 			}
 			else if (c == '\n')
-				CompileError("Unclosed string", program.size());
+				CompileError("Unclosed string", line_number);
 			else
 				t += c;
 			if (t.back() == '(')
@@ -465,6 +469,13 @@ struct varible_value
 	DataTypes::number number_value;
 	DataTypes::string string_value;
 	DataTypes::boolean boolean_value;
+	varible_value()
+	{
+	}
+	varible_value(variable_type _type)
+	{
+		type = _type;
+	}
 };
 map<string, varible_value> varibles;
 class statement
@@ -472,6 +483,9 @@ class statement
 public:
 	/// @brief 执行语句
 	virtual void exec();
+
+protected:
+	int line_number; // 行号
 };
 class statement_new : statement
 {
@@ -479,12 +493,33 @@ private:
 	variable_type type;	  // 变量类型
 	string variable_name; // 变量名
 public:
-	statement_new(variable_type _type, string _variable_name)
+	statement_new(int _line_number, variable_type _type, string _variable_name)
 	{
+		line_number = _line_number;
 		type = _type;
 		variable_name = _variable_name;
 	}
-	void exec() override {}
+	void exec() override
+	{
+		if (varibles.count(variable_name))
+			CompileError("Variable redefinition", line_number);
+		else
+			varibles[variable_name] = variable_type(type);
+	}
+};
+class statement_set : statement
+{
+private:
+	string varible_name;
+	varible_value other_value;
+
+public:
+	statement_set(int _line_number, string _varible_name, varible_value _other_value)
+	{
+		line_number = _line_number;
+		varible_name = _varible_name;
+		other_value = _other_value;
+	}
 };
 /// @brief 语法分析函数
 void parser();
