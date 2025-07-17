@@ -20,14 +20,14 @@ void dfs(int nn, int nm)
 	{
 		s += (a[nn][++mh[nn].first] << nm);
 		dfs(nn + 1, nm);
+		s -= (a[nn][mh[nn].first] << nm);
 		--mh[nn].first;
-		s -= (a[nn][++mh[nn].first] << nm);
 	}
 	{
 		s += (a[nn][--mh[nn].second] << nm);
 		dfs(nn + 1, nm);
+		s -= (a[nn][mh[nn].second] << nm);
 		++mh[nn].second;
-		s -= (a[nn][--mh[nn].second] << nm);
 	}
 }
 int main()
