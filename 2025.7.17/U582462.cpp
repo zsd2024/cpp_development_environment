@@ -490,7 +490,7 @@ struct variable_value
 			else if (other.type == variable_string)
 				throw runtime_error("Cannot assign string to non-string variable");
 			else if (other.type == variable_boolean)
-				this->number_value = DataTypes::number(other.boolean_value);
+				this->number_value = other.boolean_value;
 		}
 		else if (this->type == variable_string)
 		{
@@ -504,11 +504,11 @@ struct variable_value
 		else if (this->type == variable_boolean)
 		{
 			if (other.type == variable_number)
-				throw runtime_error("Cannot assign string to non-string variable");
+				this->boolean_value = other.number_value;
 			else if (other.type == variable_string)
-				this->string_value = other.string_value;
-			else if (other.type == variable_boolean)
 				throw runtime_error("Cannot assign string to non-string variable");
+			else if (other.type == variable_boolean)
+				this->boolean_value = other.boolean_value;
 		}
 	}
 };
