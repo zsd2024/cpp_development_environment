@@ -459,10 +459,35 @@ void lexer()
 		}
 	}
 }
-class state
-	/// @brief 语法分析函数
-	void
-	parser();
+struct varible_value
+{
+	variable_type type;
+	DataTypes::number number_value;
+	DataTypes::string string_value;
+	DataTypes::boolean boolean_value;
+};
+map<string, varible_value> varibles;
+class statement
+{
+public:
+	/// @brief 执行语句
+	virtual void exec();
+};
+class statement_new : statement
+{
+private:
+	variable_type type;	  // 变量类型
+	string variable_name; // 变量名
+public:
+	statement_new(variable_type _type, string _variable_name)
+	{
+		type = _type;
+		variable_name = _variable_name;
+	}
+	void exec() override {}
+};
+/// @brief 语法分析函数
+void parser();
 int n;
 int main()
 {
