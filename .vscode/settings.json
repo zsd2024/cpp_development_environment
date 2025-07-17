@@ -128,11 +128,6 @@
     "C_Cpp.autocomplete": "default",
     "C_Cpp.codeFolding": "enabled",
     "C_Cpp.dimInactiveRegions": true,
-    "gitdoc.autoCommitDelay": 0,
-    "gitdoc.autoPullDelay": 0,
-    "gitdoc.autoPushDelay": 0,
-    "gitdoc.autoPush": "afterDelay",
-    "gitdoc.autoPull": "afterDelay",
     "gitdoc.pushMode": "push",
     "files.autoSave": "onFocusChange",
 }
