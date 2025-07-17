@@ -397,10 +397,12 @@ void lexer()
 					t.clear();
 				}
 			}
-			else if (c == '\n' && in_string)
-				CompileError("Unclosed string", program.size());
-			else
-				t += c;
+			else if (c == '\n')
+				if (in_string)
+					CompileError("Unclosed string", program.size());
+				else
+
+					else t += c;
 			if (t.back() == '(')
 			{
 				string tmp(t.begin(), t.end() - 1);
@@ -455,7 +457,6 @@ void lexer()
 			}
 		}
 	}
-	tokens.push_back(token(token_endline, token_value()));
 }
 void parser();
 int n;
