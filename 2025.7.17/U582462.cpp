@@ -391,9 +391,7 @@ void lexer()
 			if (c == '"')
 			{
 				in_string = !in_string;
-				if (in_string)
-					t += c;
-				else
+				if (!in_string)
 				{
 					tokens.push_back(token(token_string, DataTypes::string(t)));
 					t.clear();
