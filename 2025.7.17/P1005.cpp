@@ -42,5 +42,6 @@ int main()
 		mh[i].first = 0;
 		mh[i].second = m + 1;
 	}
+	dfs(1, 1);
 	cout << mx;
 }
