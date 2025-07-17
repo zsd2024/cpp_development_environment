@@ -459,7 +459,10 @@ void lexer()
 		}
 	}
 }
-void parser();
+class state
+	/// @brief 语法分析函数
+	void
+	parser();
 int n;
 int main()
 {
