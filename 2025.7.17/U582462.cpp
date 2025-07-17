@@ -238,6 +238,7 @@ struct token_value
 };
 /// @brief 关键字及其字符串表示的对应
 map<string, keyword_type> keywords = {
+	{"new", keyword_new},
 	{"set", keyword_set},
 	{"to", keyword_to},
 	{"input", keyword_input},
