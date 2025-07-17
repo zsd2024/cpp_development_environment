@@ -20,10 +20,12 @@ void dfs(int nn, int nm)
 	{
 		s += a[nn][++mh[nn].first] << nm;
 		dfs(nn + 1, nm);
+		--mh[nn].first;
 	}
 	{
 		s += a[nn][--mh[nn].second] << nm;
 		dfs(nn + 1, nm);
+		++mh[nn].second;
 	}
 }
 int main()
@@ -32,7 +34,11 @@ int main()
 	cin.tie(0);
 	cin >> n >> m;
 	for (int i = 1; i <= n; ++i)
-		for (int j = 1; j <= n; ++j)
+	{
+		for (int j = 1; j <= m; ++j)
 			cin >> a[i][j];
+		mh[i].first = 0;
+		mh[i].second = m + 1;
+	}
 	cout << mx;
 }
