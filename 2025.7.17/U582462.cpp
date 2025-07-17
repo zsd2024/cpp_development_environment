@@ -264,6 +264,21 @@ map<string, operator_type> operators = {
 	{"<=", operator_less_equal},
 	{"<", operator_less},
 	{"!=", operator_not_equal}};
+/// @brief 单字符运算符及其字符表示的对应
+map<char, operator_type> operators_char = {
+	{'+', operator_add},
+	{'-', operator_sub},
+	{'*', operator_mul},
+	{'/', operator_div},
+	{'%', operator_mod}};
+/// @brief 双字符运算符及其字符表示的对应
+map<string, operator_type> operators_string = {
+	{">", operator_greater},
+	{">=", operator_greater_equal},
+	{"==", operator_equal},
+	{"<=", operator_less_equal},
+	{"<", operator_less},
+	{"!=", operator_not_equal}};
 /// @brief token 结构体
 struct token
 {
@@ -331,9 +346,15 @@ void add_token(string str)
 		if (it_operator != operators.end())
 			tokens.push_back(token(token_operator, it_operator->second));
 		else if (str == "(")
+		{
 			tokens.push_back(token(token_left_parentheses, token_value()));
+			str.clear();
+		}
 		else if (str == ")")
+		{
 			tokens.push_back(token(token_right_parentheses, token_value()));
+			str.clear();
+		}
 		else if (str == "true")
 			tokens.push_back(token(token_boolean, DataTypes::boolean(true)));
 		else if (str == "false")
@@ -402,6 +423,36 @@ void lexer()
 				}
 				tokens.push_back(token(token_right_parentheses, token_value()));
 				t.clear();
+			}
+			else
+			{
+				map<char, operator_type>::iterator it_operator_char = operators_char.find(t.back());
+				if (it_operator_char != operators_char.end())
+				{
+					string tmp(t.begin(), t.end() - 1);
+					if (!tmp.empty())
+					{
+						add_token(tmp);
+						t.clear();
+					}
+					tokens.push_back(token(token_operator, it_operator_char->second));
+					t.clear();
+				}
+				else
+				{
+					map<string, operator_type>::iterator it_operator_string = operators_string.find(string(t.end() - 2, t.end()));
+					if (it_operator_string != operators_string.end())
+					{
+						string tmp(t.begin(), t.end() - 2);
+						if (!tmp.empty())
+						{
+							add_token(tmp);
+							t.clear();
+						}
+						tokens.push_back(token(token_operator, it_operator_string->second));
+						t.clear();
+					}
+				}
 			}
 		}
 	}
