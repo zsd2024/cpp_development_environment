@@ -18,7 +18,11 @@ void dfs(int nn, int nm)
 		return;
 	}
 	{
-		s += (++mh[nn].first) << nm;
+		s += a[nn][++mh[nn].first] << nm;
+		dfs(nn + 1, nm);
+	}
+	{
+		s += a[nn][--mh[nn].second] << nm;
 		dfs(nn + 1, nm);
 	}
 }
