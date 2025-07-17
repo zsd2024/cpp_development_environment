@@ -19,6 +19,8 @@ namespace DataTypes
 	class boolean;
 	class number
 	{
+		friend class boolean;
+
 	private:
 		unsigned long long value; // 值
 		bool negative;			  // 是否为负数
@@ -41,7 +43,10 @@ namespace DataTypes
 			value = llabs(_value);
 			negative = _value < 0;
 		}
-		operator boolean();
+		number(boolean _value)
+		{
+			value = _value.value ? 1 : 0;
+		}
 		number operator+(number other)
 		{
 			if (negative == other.negative)
@@ -127,6 +132,8 @@ namespace DataTypes
 	};
 	class boolean
 	{
+		friend class number;
+
 	private:
 		bool value; // 值
 	public:
@@ -138,9 +145,9 @@ namespace DataTypes
 		{
 			value = _value;
 		}
-		operator number()
+		boolean(number _value)
 		{
-			return number(value ? 1 : 0, false);
+			value = _value.value != 0;
 		}
 		friend ostream &operator<<(ostream &os, const boolean &b)
 		{
@@ -148,10 +155,6 @@ namespace DataTypes
 			return os;
 		}
 	};
-	number::operator boolean()
-	{
-		return boolean(value != 0);
-	}
 }
 /// @brief token 类型
 enum token_type
@@ -200,7 +203,7 @@ enum keyword_type
 };
 enum variable_type
 {
-	varible_numm,	 // 无
+	variable_numm,	 // 无
 	variable_number, // 整数
 	variable_string, // 字符串
 	variable_boolean // 布尔
@@ -463,21 +466,31 @@ void lexer()
 		}
 	}
 }
-struct varible_value
+struct variable_value
 {
 	variable_type type;
 	DataTypes::number number_value;
 	DataTypes::string string_value;
 	DataTypes::boolean boolean_value;
-	varible_value()
+	variable_value()
 	{
 	}
-	varible_value(variable_type _type)
+	variable_value(variable_type _type)
 	{
 		type = _type;
 	}
+	variable_value operator=(const variable_value &other)
+	{
+		if (this->type == variable_number)
+			if (other.type == variable_number)
+				this->number_value = other.number_value;
+			else if (other.type == variable_string)
+				throw runtime_error("Cannot assign string to non-string variable");
+			else if (other.type == variable_boolean)
+				this->number_value = DataTypes::number(other.boolean_value);
+	}
 };
-map<string, varible_value> varibles;
+map<string, variable_value> variables;
 class statement
 {
 public:
@@ -501,23 +514,23 @@ public:
 	}
 	void exec() override
 	{
-		if (varibles.count(variable_name))
+		if (variables.count(variable_name))
 			CompileError("Variable redefinition", line_number);
 		else
-			varibles[variable_name] = variable_type(type);
+			variables[variable_name] = variable_type(type);
 	}
 };
 class statement_set : statement
 {
 private:
-	string varible_name;
-	varible_value other_value;
+	string variable_name;
+	variable_value other_value;
 
 public:
-	statement_set(int _line_number, string _varible_name, varible_value _other_value)
+	statement_set(int _line_number, string _variable_name, variable_value _other_value)
 	{
 		line_number = _line_number;
-		varible_name = _varible_name;
+		variable_name = _variable_name;
 		other_value = _other_value;
 	}
 };
