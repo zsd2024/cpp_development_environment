@@ -535,6 +535,9 @@ public:
 		variable_name = _variable_name;
 		other_value = _other_value;
 	}
+	void exec() override
+	{
+	}
 };
 /// @brief 语法分析函数
 void parser();
