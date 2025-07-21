@@ -46,7 +46,7 @@ int calc(int l, int r)
 int main()
 {
 	cin >> s;
-	int c = 0;
+	int c = 0 /*括号深度*/;
 	for (int i = 0; i < s.length(); ++i) // 遍历每个字符
 	{
 		if (s[i] == '(')
