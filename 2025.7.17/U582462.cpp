@@ -17,6 +17,14 @@ namespace DataTypes
 	class number;
 	class string;
 	class boolean;
+}
+DataTypes::number string_to_number(string s);
+void getline(istream &in, DataTypes::string &str);
+namespace DataTypes
+{
+	class number;
+	class string;
+	class boolean;
 	class number
 	{
 		friend class boolean;
@@ -96,6 +104,14 @@ namespace DataTypes
 		{
 			return !(*this == other);
 		}
+		/// @throws 如果输入的字符串不是整数，则抛出异常 `runtime_error`，内容为“Not a number!”
+		friend istream &operator>>(istream &in, number &num)
+		{
+			::string str;
+			in >> str;
+			num = string_to_number(str);
+			return in;
+		}
 		friend ostream &operator<<(ostream &os, const number &num)
 		{
 			if (num.negative)
@@ -106,6 +122,8 @@ namespace DataTypes
 	};
 	class string
 	{
+		friend void getline(istream &in, string &str);
+
 	private:
 		::string value; // 值
 	public:
@@ -120,6 +138,11 @@ namespace DataTypes
 		operator ::string()
 		{
 			return value;
+		}
+		friend istream &operator>>(istream &in, string &s)
+		{
+			in >> s.value;
+			return in;
 		}
 		friend ostream &operator<<(ostream &os, const string &s)
 		{
@@ -143,6 +166,21 @@ namespace DataTypes
 			value = _value;
 		}
 		boolean(number _value);
+		/// @throws 如果输入的字符串不是布尔值，则抛出异常 `runtime_error`，内容为“Not a boolean!”
+		friend istream &operator>>(istream &in, boolean &b)
+		{
+			::string str;
+			in >> str;
+			for (char &c : str)
+				c = tolower(c);
+			if (str == "1" || str == "true" || str == "yes")
+				b.value = true;
+			else if (str == "0" || str == "false" || str == "no")
+				b.value = false;
+			else
+				throw runtime_error("Not a boolean!");
+			return in;
+		}
 		friend ostream &operator<<(ostream &os, const boolean &b)
 		{
 			os << (b.value ? "true" : "false");
@@ -158,6 +196,10 @@ namespace DataTypes
 		value = _value.value != 0;
 	}
 }
+void getline(istream &in, DataTypes::string &str)
+{
+	getline(in, str.value);
+}
 /// @brief token 类型
 enum token_type
 {
@@ -169,6 +211,7 @@ enum token_type
 	token_right_parentheses, // 右括号
 	token_endline,			 // 换行
 	token_keyword,			 // 关键字
+	token_data_type,		 // 类型
 	token_variable			 // 变量
 };
 /// @brief 运算符类型
@@ -189,7 +232,7 @@ enum operator_type
 /// @brief 关键字类型
 enum keyword_type
 {
-	keyword_new,	  // set
+	keyword_new,	  // new
 	keyword_set,	  // set
 	keyword_to,		  // to
 	keyword_input,	  // input
@@ -205,10 +248,10 @@ enum keyword_type
 };
 enum variable_type
 {
-	variable_numm,	 // 无
-	variable_number, // 整数
-	variable_string, // 字符串
-	variable_boolean // 布尔
+	variable_null,		  // 无
+	variable_type_number, // 整数
+	variable_type_string, // 字符串
+	variable_type_boolean // 布尔
 };
 /// @brief token 值
 struct token_value
@@ -218,6 +261,7 @@ struct token_value
 	DataTypes::boolean boolean_value;
 	operator_type operator_value;
 	keyword_type keyword_value;
+	variable_type variable_type_value;
 	token_value()
 	{
 	}
@@ -240,6 +284,10 @@ struct token_value
 	token_value(keyword_type _keyword_value)
 	{
 		keyword_value = _keyword_value;
+	}
+	token_value(variable_type _variable_type_value)
+	{
+		variable_type_value = _variable_type_value;
 	}
 };
 /// @brief 关键字及其字符串表示的对应
@@ -285,6 +333,11 @@ map<string, operator_type> operators_string = {
 	{"<=", operator_less_equal},
 	{"<", operator_less},
 	{"!=", operator_not_equal}};
+/// @brief 变量类型及其字符串表示的对应
+map<string, variable_type> variables_type_string = {
+	{"number", variable_type_number},
+	{"string", variable_type_string},
+	{"boolean", variable_type_boolean}};
 /// @brief token 结构体
 struct token
 {
@@ -342,37 +395,49 @@ vector<token> tokens;
 string program;
 void add_token(string str)
 {
-	map<string, keyword_type>::iterator it_keyword = keywords.find(str);
-	if (it_keyword != keywords.end())
-		tokens.push_back(token(token_keyword, it_keyword->second));
+	if (str == "(")
+	{
+		tokens.push_back(token(token_left_parentheses, token_value()));
+		str.clear();
+	}
+	else if (str == ")")
+	{
+		tokens.push_back(token(token_right_parentheses, token_value()));
+		str.clear();
+	}
+	else if (str == "true")
+		tokens.push_back(token(token_boolean, DataTypes::boolean(true)));
+	else if (str == "false")
+		tokens.push_back(token(token_boolean, DataTypes::boolean(false)));
 	else
 	{
-		map<string, operator_type>::iterator it_operator = operators.find(str);
-		if (it_operator != operators.end())
-			tokens.push_back(token(token_operator, it_operator->second));
-		else if (str == "(")
+		try
 		{
-			tokens.push_back(token(token_left_parentheses, token_value()));
-			str.clear();
+			tokens.push_back(token(token_number, string_to_number(str)));
 		}
-		else if (str == ")")
+		catch (runtime_error &e)
 		{
-			tokens.push_back(token(token_right_parentheses, token_value()));
-			str.clear();
-		}
-		else if (str == "true")
-			tokens.push_back(token(token_boolean, DataTypes::boolean(true)));
-		else if (str == "false")
-			tokens.push_back(token(token_boolean, DataTypes::boolean(false)));
-		else
-		{
-			try
+			map<string, keyword_type>::iterator it_keyword = keywords.find(str);
+			if (it_keyword != keywords.end())
+				tokens.push_back(token(token_keyword, it_keyword->second));
+			else
 			{
-				tokens.push_back(token(token_number, string_to_number(str)));
-			}
-			catch (runtime_error &e)
-			{
-				tokens.push_back(token(token_variable, DataTypes::string(str)));
+				map<string, operator_type>::iterator it_operator = operators.find(str);
+				if (it_operator != operators.end())
+					tokens.push_back(token(token_operator, it_operator->second));
+				else
+				{
+					map<string, variable_type>::iterator it_variable = variables_type_string.find(str);
+					if (it_variable != variables_type_string.end())
+						tokens.push_back(token(token_data_type, it_variable->second));
+					else
+					{
+						regex reg("[a-zA-Z_][a-zA-Z0-9_]*");
+						if (!regex_match(str, reg))
+							throw runtime_error("Wrong name!");
+						tokens.push_back(token(token_variable, DataTypes::string(str)));
+					}
+				}
 			}
 		}
 	}
@@ -389,7 +454,14 @@ void lexer()
 		{
 			if (!t.empty())
 			{
-				add_token(t);
+				try
+				{
+					add_token(t);
+				}
+				catch (runtime_error &e)
+				{
+					CompileError("Invalid identifier", line_number);
+				}
 				t.clear();
 			}
 			if (c == '\n')
@@ -483,33 +555,51 @@ struct variable_value
 	}
 	variable_value operator=(const variable_value &other)
 	{
-		if (this->type == variable_number)
+		if (this->type == variable_type_number)
 		{
-			if (other.type == variable_number)
+			if (other.type == variable_type_number)
 				this->number_value = other.number_value;
-			else if (other.type == variable_string)
+			else if (other.type == variable_type_string)
 				throw runtime_error("Cannot assign string to non-string variable");
-			else if (other.type == variable_boolean)
+			else if (other.type == variable_type_boolean)
 				this->number_value = other.boolean_value;
 		}
-		else if (this->type == variable_string)
+		else if (this->type == variable_type_string)
 		{
-			if (other.type == variable_number)
+			if (other.type == variable_type_number)
 				throw runtime_error("Cannot assign string to non-string variable");
-			else if (other.type == variable_string)
+			else if (other.type == variable_type_string)
 				this->string_value = other.string_value;
-			else if (other.type == variable_boolean)
+			else if (other.type == variable_type_boolean)
 				throw runtime_error("Cannot assign string to non-string variable");
 		}
-		else if (this->type == variable_boolean)
+		else if (this->type == variable_type_boolean)
 		{
-			if (other.type == variable_number)
+			if (other.type == variable_type_number)
 				this->boolean_value = other.number_value;
-			else if (other.type == variable_string)
+			else if (other.type == variable_type_string)
 				throw runtime_error("Cannot assign string to non-string variable");
-			else if (other.type == variable_boolean)
+			else if (other.type == variable_type_boolean)
 				this->boolean_value = other.boolean_value;
 		}
+	}
+	friend istream &operator>>(istream &in, variable_value &v)
+	{
+		if (v.type == variable_type_number)
+			return in >> v.number_value;
+		else if (v.type == variable_type_string)
+			return in >> v.string_value;
+		else if (v.type == variable_type_boolean)
+			return in >> v.boolean_value;
+	}
+	friend ostream &operator<<(ostream &out, const variable_value &v)
+	{
+		if (v.type == variable_type_number)
+			return out << v.number_value;
+		else if (v.type == variable_type_string)
+			return out << v.string_value;
+		else if (v.type == variable_type_boolean)
+			return out << v.boolean_value;
 	}
 };
 map<string, variable_value> variables;
@@ -557,8 +647,102 @@ public:
 	}
 	void exec() override
 	{
+		if (!variables.count(variable_name))
+			CompileError("Undefined identifier", line_number);
+		else
+		{
+			try
+			{
+				variables[variable_name] = other_value;
+			}
+			catch (runtime_error &e)
+			{
+				CompileError("Invalid argument", line_number);
+			}
+		}
 	}
 };
+class statement_input : statement
+{
+private:
+	string variable_name;
+
+public:
+	statement_input(int _line_number, string _variable_name)
+	{
+		line_number = _line_number;
+		variable_name = _variable_name;
+	}
+	void exec() override
+	{
+		if (!variables.count(variable_name))
+			CompileError("Undefined identifier", line_number);
+		else
+		{
+			try
+			{
+				cin >> variables[variable_name];
+			}
+			catch (runtime_error &e)
+			{
+				CompileError("Invalid argument", line_number);
+			}
+		}
+	}
+};
+class statement_get_line : statement
+{
+private:
+	string variable_name;
+
+public:
+	statement_get_line(int _line_number, string _variable_name)
+	{
+		line_number = _line_number;
+		variable_name = _variable_name;
+	}
+	void exec() override
+	{
+		if (!variables.count(variable_name))
+			CompileError("Undefined identifier", line_number);
+		else if (variables[variable_name].type != variable_type_string)
+			CompileError("Invalid argument", line_number);
+		else
+			getline(cin, variables[variable_name].string_value);
+	}
+};
+class statement_output : statement
+{
+private:
+	string variable_name;
+	variable_value value;
+
+public:
+	statement_output(int _line_number, string _variable_name)
+	{
+		line_number = _line_number;
+		variable_name = _variable_name;
+	}
+	statement_output(int _line_number, variable_value _value)
+	{
+		line_number = _line_number;
+		value = _value;
+	}
+	void exec() override
+	{
+		if (!variable_name.empty())
+			if (!variables.count(variable_name))
+				CompileError("Undefined identifier", line_number);
+			else
+				value = variables[variable_name];
+		cout << value;
+	}
+};
+class statement_if : statement
+{
+private:
+	string 
+}
 /// @brief 语法分析函数
 void parser();
 int n;
@@ -587,6 +771,8 @@ int main()
 			cout << "Variable: " << tokens[i].value.string_value << '\n';
 		else if (tokens[i].type == token_keyword)
 			cout << "Keyword: " << tokens[i].value.keyword_value << '\n';
+		else if (tokens[i].type == token_data_type)
+			cout << "Data type: " << tokens[i].value.variable_type_value << '\n';
 		else if (tokens[i].type == token_operator)
 			cout << "Operator: " << tokens[i].value.operator_value << '\n';
 		else if (tokens[i].type == token_left_parentheses)
@@ -597,5 +783,3 @@ int main()
 			cout << "Endline\n";
 	return 0;
 }
-
-1 + 1 + 22 + 5646416
