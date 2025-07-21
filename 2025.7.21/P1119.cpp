@@ -28,7 +28,7 @@ int main()
 			continue;
 		}
 		priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
-		vector<bool> visited(n, false);
+		vector<bool> vis(n, false);
 		vector<int> dis(n, 0x3f3f3f3f);
 		dis[x] = 0;
 		q.push({0, x});
@@ -37,15 +37,15 @@ int main()
 		{
 			auto [d, u] = q.top();
 			q.pop();
-			if (visited[u])
+			if (vis[u])
 				continue;
-			visited[u] = true;
+			vis[u] = true;
 
-			for (const pair<int, int> &edge : v[u])
+			for (const pair<int, int> &e : v[u])
 			{
-				int v = edge.first;
-				int w = edge.second;
-				if (!visited[v] && ::t[v] <= t && dis[v] > dis[u] + w)
+				int v = e.first;
+				int w = e.second;
+				if (!vis[v] && ::t[v] <= t && dis[v] > dis[u] + w)
 				{
 					dis[v] = dis[u] + w;
 					q.push({dis[v], v});
