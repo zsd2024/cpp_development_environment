@@ -29,7 +29,7 @@ int main()
 		}
 		priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
 		vector<bool> visited(n, false);
-		vector<int> dis(n, 0);
+		vector<int> dis(n, 0x3f3f3f3f);
 		dis[x] = 0;
 		q.push({0, x});
 
@@ -52,5 +52,7 @@ int main()
 				}
 			}
 		}
+
+		cout << (dis[y] == 0x3f3f3f3f ? -1 : dis[y]) << '\n';
 	}
 }
