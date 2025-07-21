@@ -17,5 +17,5 @@ int main()
 	cin.tie(0);
 	cin >> n;
 	for (int i = 1; i <= n; ++i)
-		cin >> city[i].x >> city[i].y;
+		cin >> city[i].x >> city[i].
 }
