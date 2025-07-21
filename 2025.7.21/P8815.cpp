@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-int andd /*与运算的*/, orr;
-string s;
+int andd /*与运算的“短路”*/, orr /*或运算的“短路”*/;
+string s /*表达式*/;
 const int maxlen = (int)1e6 + 1;
 int ac[maxlen], oc[maxlen], an[maxlen], on[maxlen], r;
 /// @brief 计算函数
-/// @param l 算式起始位置
-/// @param r 算式结束位置
+/// @param l 表达式起始位置
+/// @param r 表达式结束位置
 /// @return 表达式的值
 int calc(int l, int r)
 {
