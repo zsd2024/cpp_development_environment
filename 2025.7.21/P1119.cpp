@@ -22,6 +22,35 @@ int main()
 	{
 		int x, y, t;
 		cin >> x >> y >> t;
-		if (::t[x])
+		if (::t[x] > t || ::t[y] > t)
+		{
+			cout << "-1\n";
+			continue;
+		}
+		priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+		vector<bool> visited(n, false);
+		vector<int> dis(n, 0);
+		dis[x] = 0;
+		q.push({0, x});
+
+		while (!q.empty())
+		{
+			auto [d, u] = q.top();
+			q.pop();
+			if (visited[u])
+				continue;
+			visited[u] = true;
+
+			for (const pair<int, int> &edge : v[u])
+			{
+				int v = edge.first;
+				int w = edge.second;
+				if (!visited[v] && ::t[v] <= t && dis[v] > dis[u] + w)
+				{
+					dis[v] = dis[u] + w;
+					q.push({dis[v], v});
+				}
+			}
+		}
 	}
 }
