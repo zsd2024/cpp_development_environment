@@ -4,6 +4,10 @@ int andd, orr;
 string s;
 const int maxlen = (int)1e6 + 1;
 int ac[maxlen], oc[maxlen], an[maxlen], on[maxlen], r;
+/// @brief 计算函数
+/// @param l 算式起始位置
+/// @param r 算式结束位置
+/// @return
 int calc(int l, int r)
 {
 	if (on[r] >= l && s[on[r]] == '|')
