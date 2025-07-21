@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int andd /**/, orr;
+int andd /*与运算的*/, orr;
 string s;
 const int maxlen = (int)1e6 + 1;
 int ac[maxlen], oc[maxlen], an[maxlen], on[maxlen], r;
