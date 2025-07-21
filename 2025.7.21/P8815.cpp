@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
-int andd, orr;
+int andd /**/, orr;
 string s;
 const int maxlen = (int)1e6 + 1;
 int ac[maxlen], oc[maxlen], an[maxlen], on[maxlen], r;
 /// @brief 计算函数
 /// @param l 算式起始位置
 /// @param r 算式结束位置
-/// @return
+/// @return 表达式的值
 int calc(int l, int r)
 {
 	if (on[r] >= l && s[on[r]] == '|')
@@ -47,7 +47,7 @@ int main()
 {
 	cin >> s;
 	int c = 0;
-	for (int i = 0; i < s.length(); ++i)
+	for (int i = 0; i < s.length(); ++i) // 遍历每个字符
 	{
 		if (s[i] == '(')
 			++c;
