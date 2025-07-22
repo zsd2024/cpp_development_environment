@@ -24,8 +24,11 @@ int main()
 			int x;
 			cin >> x;
 			int id = n;
-			for (int i = 1; i <= n; ++i)
+			for (int i = 1; i < x; ++i)
 				if (a[i] > a[x])
+					--id;
+			for (int i = x + 1; i <= n; ++i)
+				if (a[i] >= a[x])
 					--id;
 			cout << id << '\n';
 		}
