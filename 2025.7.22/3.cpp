@@ -51,6 +51,12 @@ void checks(string st, comp &com)
 		com.c = c;
 		com.d = d;
 		com.e = e;
+		for (int i = 1; i < wz; ++i)
+			if (com == ::a[i])
+			{
+				cout << "FAIL\n";
+				return;
+			}
 		cout << "OK\n";
 	}
 	else
@@ -98,6 +104,7 @@ void checkc(string st)
 		com.c = c;
 		com.d = d;
 		com.e = e;
+		cout << a << ' ' << b << ' ' << c << ' ' << d << ' ' << e << '\n';
 	}
 	else
 		cout << "ERR\n";
