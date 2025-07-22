@@ -106,7 +106,10 @@ void checkc(string st)
 		com.e = e;
 	}
 	else
+	{
 		cout << "ERR\n";
+		return;
+	}
 	for (int i = 1; i <= wz; ++i)
 		if (com == a[i])
 		{
