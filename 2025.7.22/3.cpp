@@ -12,116 +12,11 @@ struct comp
 int n, wz;
 void checks(string st, comp &com)
 {
+	regex reg(R"raw((0|([1-9][0-9]*)).(0|([1-9][0-9]*)).(0|([1-9][0-9]*)).(0|([1-9][0-9]*)):(0|([1-9][0-9]*)))raw");
+	std::smatch matches;
+	if (regex_match(st, matches, reg))
 	{
-		if (st[0] == '0' && isdigit(st[1]))
-		{
-			cout << "ERR\n";
-			return;
 		}
-		int x = st.find(".");
-		if (x == string::npos)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int a = stoi(st.substr(0, x));
-		if (a > 255)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		com.a = a;
-		st.erase(0, x + 1);
-	}
-
-	{
-		if (st[0] == '0' && isdigit(st[1]))
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int x = st.find(".");
-		if (x == string::npos)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int b = stoi(st.substr(0, x));
-		if (b > 255)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		com.b = b;
-		st.erase(0, x + 1);
-	}
-
-	{
-		if (st[0] == '0' && isdigit(st[1]))
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int x = st.find(".");
-		if (x == string::npos)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int c = stoi(st.substr(0, x));
-		if (c > 255)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		com.c = c;
-		st.erase(0, x + 1);
-	}
-
-	{
-		if (st[0] == '0' && isdigit(st[1]))
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int x = st.find(":");
-		if (x == string::npos)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int d = stoi(st.substr(0, x));
-		if (d > 255)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		com.d = d;
-		st.erase(0, x + 1);
-	}
-
-	{
-		if (st[0] == '0' && isdigit(st[1]))
-		{
-			cout << "ERR\n";
-			return;
-		}
-		int e = stoi(st);
-		if (e > 65535)
-		{
-			cout << "ERR\n";
-			return;
-		}
-		com.e = e;
-	}
-
-	for (int i = 1; i < wz; ++i)
-		if (com == a[i])
-		{
-			cout << "FAIL\n";
-			return;
-		}
-	cout << "OK\n";
 }
 void checkc(string st)
 {
