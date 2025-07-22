@@ -104,7 +104,6 @@ void checkc(string st)
 		com.c = c;
 		com.d = d;
 		com.e = e;
-		cout << a << ' ' << b << ' ' << c << ' ' << d << ' ' << e << '\n';
 	}
 	else
 		cout << "ERR\n";
