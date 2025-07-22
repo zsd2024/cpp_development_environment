@@ -12,11 +12,16 @@ struct comp
 int n, wz;
 void checks(string st, comp &com)
 {
-	regex reg(R"raw((0|([1-9][0-9]*)).(0|([1-9][0-9]*)).(0|([1-9][0-9]*)).(0|([1-9][0-9]*)):(0|([1-9][0-9]*)))raw");
+	regex reg(R"raw((0|(?:[1-9][0-9]*)).(0|(?:[1-9][0-9]*)).(0|(?:[1-9][0-9]*)).(0|(?:[1-9][0-9]*)):(0|(?:[1-9][0-9]*)))raw");
 	std::smatch matches;
 	if (regex_match(st, matches, reg))
 	{
-		}
+		cout << atoi(matches[1].str().c_str()) << '\n';
+		cout << atoi(matches[2].str().c_str()) << '\n';
+		cout << atoi(matches[3].str().c_str()) << '\n';
+		cout << atoi(matches[4].str().c_str()) << '\n';
+		cout << atoi(matches[5].str().c_str()) << '\n';
+	}
 }
 void checkc(string st)
 {
@@ -134,6 +139,7 @@ void checkc(string st)
 }
 int main()
 {
+	checks("1.2.3.4:5", a[++wz]);
 	cin >> n;
 	for (int i = 1; i <= n; ++i)
 	{
