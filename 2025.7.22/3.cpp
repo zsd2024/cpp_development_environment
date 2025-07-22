@@ -16,11 +16,41 @@ void checks(string st, comp &com)
 	std::smatch matches;
 	if (regex_match(st, matches, reg))
 	{
-		cout << atoi(matches[1].str().c_str()) << '\n';
-		cout << atoi(matches[2].str().c_str()) << '\n';
-		cout << atoi(matches[3].str().c_str()) << '\n';
-		cout << atoi(matches[4].str().c_str()) << '\n';
-		cout << atoi(matches[5].str().c_str()) << '\n';
+		int a = atoi(matches[1].str().c_str());
+		int b = atoi(matches[2].str().c_str());
+		int c = atoi(matches[3].str().c_str());
+		int d = atoi(matches[4].str().c_str());
+		int e = atoi(matches[5].str().c_str());
+		if (a < 0 && a > 127)
+		{
+			cout << "ERR";
+			exit(0);
+		}
+		if (b < 0 && b > 127)
+		{
+			cout << "ERR";
+			exit(0);
+		}
+		if (c < 0 && c > 127)
+		{
+			cout << "ERR";
+			exit(0);
+		}
+		if (d < 0 && d > 127)
+		{
+			cout << "ERR";
+			exit(0);
+		}
+		if (e < 0 && e > 65535)
+		{
+			cout << "ERR";
+			exit(0);
+		}
+		com.a = a;
+		com.b = b;
+		com.c = c;
+		com.d = d;
+		com.e = e;
 	}
 }
 void checkc(string st)
