@@ -1,66 +1,98 @@
 #include <bits/stdc++.h>
 using namespace std;
-int andd /*与运算的“短路”*/, orr /*或运算的“短路”*/;
-string s /*表达式*/;
-const int maxlen = (int)1e6 + 1;
-int ac[maxlen], oc[maxlen], an[maxlen], on[maxlen], r;
-/// @brief 计算函数
-/// @param l 表达式起始位置
-/// @param r 表达式结束位置
-/// @return 表达式的值
+
+int andd /* 与运算的“短路”计数（当左侧为0时，右侧不再计算） */;
+int orr /* 或运算的“短路”计数（当左侧为1时，右侧不再计算） */;
+string s /* 输入的布尔表达式，包含 '0','1','|','&','(',')' */;
+
+const int maxlen = (int)1e6 + 1; // 最大表达式长度上限
+int ac[maxlen] /* 深度对应最近 '&' 的下标 */;
+int oc[maxlen] /* 深度对应最近 '|' 的下标 */;
+int an[maxlen] /* 每个位置对应的当前深度下最近 '&' 的全局位置 */;
+int on[maxlen] /* 每个位置对应的当前深度下最近 '|' 的全局位置 */;
+int r /* 最终计算结果 */;
+
+/// @brief 计算子表达式 [l, r] 的值，进行短路优化计数
+/// @param l 子表达式起始下标
+/// @param r 子表达式结束下标
+/// @return 计算后的布尔值（0 或 1）
 int calc(int l, int r)
 {
+	// 检查在当前区间中最外层是否有 '|' 运算符
 	if (on[r] >= l && s[on[r]] == '|')
 	{
+		// 先计算左侧子表达式
 		int a = calc(l, on[r] - 1);
+		// 如果左侧为 1，则短路 OR，右侧不再计算
 		if (a == 1)
 		{
-			++orr;
-			return 1;
+			++orr;	  // OR 短路计数加一
+			return 1; // 整个表达式结果立即确定为 1
 		}
+		// 左侧为 0，则需要计算右侧子表达式
 		else
 		{
 			int b = calc(on[r] + 1, r);
-			return (a || b);
+			return (a || b); // 返回或运算结果
 		}
 	}
+
+	// 检查在当前区间中最外层是否有 '&' 运算符
 	if (an[r] >= l && s[an[r]] == '&')
 	{
+		// 先计算左侧子表达式
 		int a = calc(l, an[r] - 1);
+		// 如果左侧为 0，则短路 AND，右侧不再计算
 		if (a == 0)
 		{
-			++andd;
-			return 0;
+			++andd;	  // AND 短路计数加一
+			return 0; // 整个表达式结果立即确定为 0
 		}
+		// 左侧为 1，则需要计算右侧子表达式
 		else
 		{
 			int b = calc(an[r] + 1, r);
-			return (a && b);
+			return (a && b); // 返回与运算结果
 		}
 	}
+
+	// 如果子表达式被一对括号包围，则剥去外层括号继续计算
 	if (s[l] == '(' && s[r] == ')')
 		return calc(l + 1, r - 1);
+
+	// 基本情况：单个字符 '0' 或 '1'
 	else
-		return s[l] - '0';
+		return s[l] - '0'; // 将字符数字转换为整数返回
 }
+
 int main()
 {
+	// 读取输入的布尔表达式
 	cin >> s;
-	int c = 0 /*括号深度*/;
-	for (int i = 0; i < s.length(); ++i) // 遍历每个字符
+
+	int c = 0 /* 当前扫描到的位置的括号深度 */;
+
+	// 预处理：为表达式中每个位置记录最外层深度对应的最近运算符下标
+	for (int i = 0; i < (int)s.length(); ++i) // 遍历字符串每个字符
 	{
-		if (s[i] == '(')
+		if (s[i] == '(') // 遇到左括号，深度加一
 			++c;
-		else if (s[i] == ')')
+		else if (s[i] == ')') // 遇到右括号，深度减一
 			--c;
-		else if (s[i] == '|')
+		else if (s[i] == '|') // 在当前深度处记录 '|' 的位置
 			oc[c] = i;
-		else if (s[i] == '&')
+		else if (s[i] == '&') // 在当前深度处记录 '&' 的位置
 			ac[c] = i;
-		on[i] = oc[c];
-		an[i] = ac[c];
+
+		on[i] = oc[c]; // 对每个字符位置记录其当前深度的最近 '|' 下标
+		an[i] = ac[c]; // 对每个字符位置记录其当前深度的最近 '&' 下标
 	}
-	r = calc(0, s.length() - 1);
+
+	// 从整个表达式区间 [0, s.length()-1] 开始计算
+	r = calc(0, (int)s.length() - 1);
+
+	// 输出计算结果以及两种短路操作的计数
 	cout << r << '\n'
 		 << andd << ' ' << orr;
+	return 0; // 程序结束
 }
