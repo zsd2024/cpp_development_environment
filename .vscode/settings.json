@@ -133,4 +133,5 @@
     "git.blame.editorDecoration.enabled": true,
     "outline-map.follow": "viewport",
     "editor.cursorSmoothCaretAnimation": "explicit",
+    "vscodePluginSwimming.rewriteMode": "cycle",
 }
