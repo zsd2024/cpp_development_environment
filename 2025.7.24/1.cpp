@@ -9,10 +9,10 @@ int main()
 	cin >> n;
 	while (n)
 	{
+		++ans1;
+		if (n % 3 == 1 && !ans2)
+			ans2 = ans1;
 		n -= (n + 2) / 3;
-		++ans2;
-		if (n % 3 == 1 && !ans1)
-			ans1 = ans2 + 1;
 	}
 	cout << ans1 << ' ' << ans2 << '\n';
 }
