@@ -33,5 +33,5 @@ int main()
 		jl += d * jyl;
 		jl -= vs;
 	}
-	cout << q;
+	cout << q << '\n';
 }
