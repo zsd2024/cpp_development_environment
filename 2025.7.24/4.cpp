@@ -20,9 +20,9 @@ int main()
 		for (const pair<int, int> &t : g[i])
 		{
 			int v = t.first;
-			dis[v][0] = max(dis[i][k - 1] + 1, dis[v][0]);
+			dis[v][0] = min(dis[i][k - 1] + 1, dis[v][0]);
 			for (int j = 1; j < k; ++j)
-				dis[v][j] = max(dis[i][j - 1] + 1, dis[v][j]);
+				dis[v][j] = min(dis[i][j - 1] + 1, dis[v][j]);
 		}
-	cout << dis[n][0];
+	cout << dis[n][0] << '\n';
 }
