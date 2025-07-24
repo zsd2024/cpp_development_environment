@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, k;
+int mx, mn = INT_MAX;
 int dis[10001][100];
 vector<pair<int, int>> g[10001];
 int try_to_go(int start_time)
@@ -30,7 +31,9 @@ int main()
 		int u, v, a;
 		cin >> u >> v >> a;
 		g[u].push_back({v, a});
+		mx = max(mx, a);
 	}
-	try_to_go(0);
-	cout << dis[n][0];
+	for (int i = 0; i * k - k + 1 <= mx; ++i)
+		mn = min(mn, try_to_go(i * k));
+	cout << mn;
 }
