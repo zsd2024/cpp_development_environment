@@ -31,14 +31,6 @@ int main()
 		cin >> u >> v >> a;
 		g[u].push_back({v, a});
 	}
-	memset(dis, 0x3f, sizeof(dis));
-	dis[1][0] = 0;
-	for (int i = 1; i <= n; ++i)
-		for (const pair<int, int> &t : g[i])
-		{
-			int v = t.first;
-			dis[v][0] = min(dis[i][k - 1] + 1, dis[v][0]);
-			for (int j = 1; j < k; ++j)
-				dis[v][j] = min(dis[i][j - 1] + 1, dis[v][j]);
-		}
+	try_to_go(0);
+	cout << dis[n][0];
 }
