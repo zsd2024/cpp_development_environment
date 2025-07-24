@@ -134,4 +134,5 @@
     "outline-map.follow": "viewport",
     "editor.cursorSmoothCaretAnimation": "explicit",
     "vscodePluginSwimming.rewriteMode": "cycle",
+    "vscodePluginSwimming.reWriteSpeed": 50,
 }
