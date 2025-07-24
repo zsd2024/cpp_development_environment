@@ -28,8 +28,8 @@ int main()
 		for (int j = stations[i]; j < stations[i + 1]; ++j)
 			vs += v[j];
 		int jyl = ((vs - jl) + (d - 1)) / d;
-		cout << stations[i] << ' ' << vs << ' ' << stations[i + 1] << ' ' << jyl << '\n';
-		q += jyl * a[i];
+		// cout << stations[i] << ' ' << vs << ' ' << stations[i + 1] << ' ' << jyl << '\n';
+		q += jyl * a[stations[i]];
 		jl += d * jyl;
 		jl -= vs;
 	}
