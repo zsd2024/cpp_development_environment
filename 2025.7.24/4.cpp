@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, k;
-int dis[10001][] vector<pair<int, int>> g[10001];
+int dis[10001][100];
+vector<pair<int, int>> g[10001];
 int main()
 {
 	ios::sync_with_stdio(false);
@@ -12,4 +13,12 @@ int main()
 		int u, v, a;
 		g[u].push_back({v, a});
 	}
+	memset(dis, 0x3f, sizeof(dis));
+	dis[1][0] = 0;
+	for (int i = 1; i <= n; ++i)
+		for (const pair<int, int> t : g[i])
+		{
+			int v = t.first;
+			dis[v][0] = max(dis[i][0] + 1, ) dis[v][0]
+		}
 }
