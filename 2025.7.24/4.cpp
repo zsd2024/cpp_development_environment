@@ -7,7 +7,7 @@ vector<pair<int, int>> g[10001];
 int try_to_go(int start_time)
 {
 	memset(dis, 0x3f, sizeof(dis));
-	dis[1][0] = 0;
+	dis[1][0] = start_time;
 	for (int i = 1; i <= n; ++i)
 		for (const pair<int, int> &t : g[i])
 		{
@@ -33,11 +33,7 @@ int main()
 		g[u].push_back({v, a});
 		mx = max(mx, a);
 	}
-	cout << mx << '\n';
 	for (int i = 0; i * k - k + 1 <= mx; ++i)
-	{
-		cout << i << '\n';
 		mn = min(mn, try_to_go(i * k));
-	}
 	cout << mn;
 }
