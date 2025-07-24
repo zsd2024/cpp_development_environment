@@ -31,6 +31,7 @@ int main()
 		cout << stations[i] << ' ' << vs << ' ' << stations[i + 1] << ' ' << jyl << '\n';
 		q += jyl * a[i];
 		jl += d * jyl;
+		jl -= vs;
 	}
 	cout << q;
 }
