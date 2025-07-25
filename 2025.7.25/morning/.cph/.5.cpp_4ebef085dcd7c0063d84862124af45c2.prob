@@ -1,0 +1,1 @@
+{"name":"Local: 5","url":"/workspaces/cpp_development_environment/2025.7.25/5.cpp","tests":[{"id":1753410089259,"input":"10 5\n1 2 3 6 7 9 11 22 44 50\n","output":"9\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cpp_development_environment/2025.7.25/5.cpp","group":"local","local":true}
