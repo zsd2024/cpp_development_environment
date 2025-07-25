@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int n, d;
-int jl, q;
+long long jl, q;
 int v[100001];
 int a[100001];
 vector<int> stations;
@@ -24,10 +24,10 @@ int main()
 	stations.push_back(n);
 	for (size_t i = 0; i + 1 < stations.size(); ++i)
 	{
-		int vs = 0;
+		long long vs = 0;
 		for (int j = stations[i]; j < stations[i + 1]; ++j)
 			vs += v[j];
-		int jyl = ((vs - jl) + (d - 1)) / d;
+		long long jyl = ((vs - jl) + (d - 1)) / d;
 		// cout << stations[i] << ' ' << vs << ' ' << stations[i + 1] << ' ' << jyl << '\n';
 		q += jyl * a[stations[i]];
 		jl += d * jyl;
